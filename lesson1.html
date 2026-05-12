@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 1 – White Australia Policy & The Stolen Generations</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>:root{--accent-color:#c0392b;}:root {
+  --black: #1a1008; --red: #c0392b; --yellow: #e8b84b; --ochre: #b5651d;
+  --cream: #fdf6e3; --warm-grey: #e8dcc8; --bg: #f5ede0; --text: #2a1f10;
+  --muted: #7a6550; --border: #d4c4a8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Source Serif 4',Georgia,serif; font-size:1rem; line-height:1.75; }
+.topbar { background:var(--black); color:var(--cream); padding:0.6rem 2rem; display:flex; align-items:center; justify-content:space-between; font-size:0.82rem; }
+.topbar a { color:var(--yellow); text-decoration:none; }
+.topbar a:hover { text-decoration:underline; }
+.hero { background:var(--black); color:var(--cream); padding:2.5rem 2rem 2rem; position:relative; }
+.hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:5px; background:linear-gradient(90deg,var(--black),var(--red),var(--yellow)); }
+.hero-inner { max-width:860px; margin:0 auto; }
+.lesson-label { font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.4rem; }
+.hero h1 { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,4.5vw,2.8rem); font-weight:900; line-height:1.15; }
+.content { max-width:860px; margin:0 auto; padding:0 1.5rem 5rem; }
+/* Hook */
+.hook-box { background:linear-gradient(135deg,#1f1208,#2d1a0a); border:1px solid rgba(232,184,75,0.35); border-radius:10px; padding:1.5rem 1.75rem; margin:2rem 0 1.5rem; color:var(--cream); }
+.hook-label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.6rem; }
+.hook-box p { font-size:1.05rem; font-style:italic; color:var(--warm-grey); line-height:1.7; }
+/* Learning intention */
+.li-box { background:white; border-left:4px solid var(--accent-color,var(--red)); border-radius:0 8px 8px 0; padding:1.1rem 1.4rem; margin:1.5rem 0; box-shadow:0 2px 10px rgba(0,0,0,0.06); }
+.li-box .li-label { font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent-color,var(--red)); margin-bottom:0.4rem; font-weight:700; }
+.li-box p { font-size:0.93rem; }
+/* Warning */
+.warn { background:#fff7f7; border:1px solid rgba(192,57,43,0.3); border-radius:8px; padding:0.9rem 1.2rem; font-size:0.84rem; color:#8a2020; margin:1.25rem 0; line-height:1.65; }
+/* Student name */
+.name-row { background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.4rem; margin:1.25rem 0; display:flex; align-items:center; gap:1rem; }
+.name-row label { font-weight:600; font-size:0.9rem; white-space:nowrap; }
+.name-row input { flex:1; padding:0.45rem 0.7rem; border:1px solid var(--border); border-radius:4px; font-family:'Source Serif 4',Georgia,serif; font-size:0.95rem; color:var(--text); }
+/* Section headings */
+.sec-head { font-family:'Playfair Display',serif; font-size:1.55rem; font-weight:800; color:var(--black); border-bottom:3px solid var(--accent-color,var(--red)); padding-bottom:0.35rem; margin:2.5rem 0 1rem; }
+.sub-head { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--accent-color,var(--ochre)); margin:1.5rem 0 0.5rem; }
+p { margin-bottom:0.7rem; }
+ul,ol { padding-left:1.6rem; margin-bottom:0.75rem; }
+li { margin-bottom:0.3rem; }
+/* Booklet page images */
+.page-img { width:100%; border:1px solid var(--border); border-radius:8px; box-shadow:0 3px 16px rgba(0,0,0,0.12); margin:1.25rem 0; display:block; }
+.page-img-half { width:100%; border:1px solid var(--border); border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1); display:block; }
+.img-2col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.25rem 0; }
+.img-3col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; margin:1.25rem 0; }
+@media(max-width:600px) { .img-2col,.img-3col { grid-template-columns:1fr; } }
+/* Quote */
+.quote { border-left:4px solid var(--accent-color,var(--red)); background:rgba(192,57,43,0.05); padding:0.9rem 1.4rem; margin:1.1rem 0; border-radius:0 8px 8px 0; font-style:italic; color:#3a1a0a; }
+.quote cite { display:block; font-size:0.8rem; font-style:normal; margin-top:0.4rem; color:var(--muted); }
+/* Vocab */
+.vocab-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:0.6rem; margin:1rem 0; }
+.voc { background:white; border:1px solid var(--border); border-radius:6px; padding:0.65rem 0.9rem; font-size:0.86rem; }
+.voc strong { display:block; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--accent-color,var(--red)); margin-bottom:0.15rem; }
+/* Info box */
+.info { background:#fffbf2; border-left:3px solid var(--yellow); border-radius:0 8px 8px 0; padding:1rem 1.3rem; margin:1rem 0; font-size:0.93rem; }
+/* Video */
+.vid-section { background:var(--black); border-radius:12px; padding:1.4rem; margin:1.75rem 0; color:var(--cream); }
+.vid-label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.4rem; }
+.vid-title { font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:0.7rem; }
+.vid-player { width:100%; border-radius:8px; display:block; background:#000; max-height:480px; }
+.vid-note { font-size:0.76rem; color:#9a8878; margin-top:0.5rem; }
+/* Q sections */
+.q-section { background:white; border:1px solid var(--border); border-radius:12px; padding:1.6rem 1.75rem; margin:2rem 0; box-shadow:0 2px 14px rgba(0,0,0,0.06); }
+.q-section h3 { font-family:'Playfair Display',serif; font-size:1.2rem; border-bottom:2px solid var(--yellow); padding-bottom:0.45rem; margin-bottom:1.2rem; }
+.q-item { margin-bottom:1.6rem; }
+.q-label { font-weight:600; font-size:0.93rem; margin-bottom:0.4rem; display:flex; gap:0.5rem; align-items:flex-start; }
+.q-num { background:var(--accent-color,var(--red)); color:white; border-radius:50%; width:1.55rem; height:1.55rem; min-width:1.55rem; display:flex; align-items:center; justify-content:center; font-size:0.78rem; font-weight:700; margin-top:0.05rem; }
+textarea { width:100%; min-height:96px; padding:0.7rem 0.95rem; border:1px solid var(--border); border-radius:6px; font-family:'Source Serif 4',Georgia,serif; font-size:0.9rem; color:var(--text); background:#fffef9; resize:vertical; line-height:1.65; transition:border-color 0.2s,box-shadow 0.2s; }
+textarea:focus { outline:none; border-color:var(--accent-color,var(--red)); box-shadow:0 0 0 3px rgba(192,57,43,0.08); }
+textarea.lg { min-height:160px; }
+textarea.xl { min-height:240px; }
+/* Two col answers */
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; }
+@media(max-width:600px) { .two-col,.three-col { grid-template-columns:1fr; } }
+.col-label { font-size:0.76rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); margin-bottom:0.35rem; font-weight:700; }
+/* Reflection */
+.reflect { background:linear-gradient(135deg,#1a1008,#2e1a0a); border-radius:12px; padding:1.75rem 2rem; margin:2.5rem 0; color:var(--cream); }
+.reflect h3 { font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--yellow); margin-bottom:1rem; }
+.reflect .q-label { color:var(--warm-grey); }
+.reflect textarea { background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.18); color:var(--cream); }
+.reflect textarea:focus { border-color:var(--yellow); box-shadow:0 0 0 3px rgba(232,184,75,0.12); }
+/* Save bar */
+.save-bar { position:sticky; bottom:0; background:var(--black); padding:0.85rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; z-index:100; box-shadow:0 -4px 20px rgba(0,0,0,0.35); flex-wrap:wrap; }
+.save-bar p { font-size:0.78rem; color:var(--warm-grey); margin:0; }
+.btn-save { background:var(--yellow); color:var(--black); border:none; padding:0.65rem 1.6rem; border-radius:6px; font-family:'Source Serif 4',serif; font-size:0.88rem; font-weight:700; cursor:pointer; transition:background 0.18s; letter-spacing:0.02em; }
+.btn-save:hover { background:#f5cb55; }
+/* Nav */
+.nav-links { display:flex; justify-content:space-between; margin:2rem 0 0.5rem; }
+.nav-links a { color:var(--accent-color,var(--red)); text-decoration:none; font-size:0.88rem; }
+.nav-links a:hover { text-decoration:underline; }
+/* Table */
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:0.86rem; }
+th { background:var(--black); color:var(--cream); padding:0.55rem 0.85rem; text-align:left; }
+td { padding:0.45rem 0.85rem; border:1px solid var(--border); }
+tr:nth-child(even) td { background:#f5ece0; }
+</style>
+</head><body><div class="topbar"><span>Indigenous Australians Civil Rights Movement</span><div style="display:flex;gap:1.5rem"><a href="index.html">← All Lessons</a><a href="lesson2.html">Next Lesson →</a></div></div><div class="hero"><div class="hero-inner">
+<div class="lesson-label">Lesson 1 of 4</div>
+<h1>White Australia Policy &amp; The Stolen Generations</h1>
+</div></div><div class="content"><div class="hook-box"><div class="hook-label">💭 Thinking Question</div><p>Imagine the government passed a law saying only certain people were welcome in Australia and everyone else must leave or change who they are. Who would be affected? How would people react today?</p></div><div class="li-box"><div class="li-label">🎯 Learning Intention</div><p>By the end of this lesson I can explain the purpose of the White Australia Policy and Assimilation Policy, describe who was affected, and analyse primary sources including infographics to understand the impact of the Stolen Generations.</p></div><div class="warn">⚠️ <strong>Warning:</strong> This lesson contains historical images, stories and film involving First Nations peoples, including images of deceased persons. Please engage with care and respect.</div><div class="name-row"><label for="sName">Student Name:</label><input type="text" id="sName" placeholder="Type your full name…"></div><h2 class="sec-head">The White Australia Policy</h2><p>Study the information page and historical sources from your booklet below:</p><img class="page-img" src="page-02.jpg" alt="Booklet page 2" loading="lazy"><img class="page-img" src="page-03.jpg" alt="Booklet page 3" loading="lazy"><div class="vocab-grid">
+<div class="voc"><strong>Federation</strong>A group of states joined under one government.</div>
+<div class="voc"><strong>Immigration</strong>Coming to live permanently in a foreign country.</div>
+<div class="voc"><strong>Restriction</strong>A limiting legal measure.</div>
+<div class="voc"><strong>Deported</strong>Expelled from a country on grounds of illegal status.</div>
+<div class="voc"><strong>Prohibited</strong>Forbidden; banned by law.</div>
+<div class="voc"><strong>Dictation test</strong>Writing a passage aloud — used to exclude non-Europeans.</div>
+</div><img class="page-img" src="page-04.jpg" alt="Booklet page 4" loading="lazy"><div class="q-section"><h3>White Australia Policy Questions</h3><div class="q-item"><div class="q-label"><span class="q-num">1</span><span>What was the <strong>aim</strong> of the White Australia Policy? Was it successful?</span></div>
+<textarea id="wap1" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">2</span><span>Who <strong>suffered</strong> because of this policy, and how?</span></div>
+<textarea id="wap2" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">3</span><span>What was the <strong>purpose</strong> of the Immigration Restriction Act 1901?</span></div>
+<textarea id="wap3" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">4</span><span>Why do you think the Government <strong>excluded</strong> certain groups from immigrating?</span></div>
+<textarea id="wap4" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">5</span><span>How were people <strong>encouraged</strong> to immigrate? What groups were targeted?</span></div>
+<textarea id="wap5" placeholder="Write your answer here…"></textarea></div></div><div class="vid-section">
+<div class="vid-label">📹 Watch</div>
+<div class="vid-title">Ending the White Australia Policy (ABC Education)</div>
+<video class="vid-player" controls preload="none">
+  <source src="1__ABC_EDUCATION_1245290.mp4" type="video/mp4">
+  Your browser does not support video.
+</video></div><img class="page-img" src="page-05.jpg" alt="Booklet page 5" loading="lazy"><div class="q-section"><h3>Ending the White Australia Policy — Before, During &amp; After</h3><div class="q-item"><div class="q-label"><span class="q-num">1</span><span><strong>Before viewing:</strong> Think about your group of friends — how would you describe their cultural heritage?</span></div>
+<textarea id="bda1" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">2a</span><span><strong>During:</strong> Who was Al Grassby referring to as being upset about the end of the White Australia policy?</span></div>
+<textarea id="bda2a" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">2b</span><span><strong>During:</strong> Why were so many Vietnamese accepted into Australia after 1975? What was the impact?</span></div>
+<textarea id="bda2b" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">2c</span><span><strong>During:</strong> What were the immediate and long-term effects of the abolition of the policy?</span></div>
+<textarea id="bda2c" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">3</span><span><strong>After viewing:</strong> How are political party attitudes to refugees different today compared to 1979–82? What caused the change?</span></div>
+<textarea id="bda3" class="lg" placeholder="Write your answer here…"></textarea></div></div><h2 class="sec-head">The Assimilation Policy &amp; The Stolen Generations</h2><p>Study the Assimilation Policy page and perspectives from your booklet:</p><img class="page-img" src="page-06.jpg" alt="Booklet page 6" loading="lazy"><img class="page-img" src="page-07.jpg" alt="Booklet page 7" loading="lazy"><div class="q-section"><h3>Perspectives Sorting Activity</h3><p style="font-size:0.88rem;color:var(--muted);margin-bottom:1rem">Using the quotes from the booklet above, complete both boxes.</p><div class="two-col"><div><div class="col-label">Government aim — use quotes to explain why they created this policy</div><textarea id="persp1" class="lg" placeholder="What was the aim of the assimilation policy? Explain using quotes…"></textarea></div><div><div class="col-label">Impact on Aboriginal Australians — use quotes to show how people felt</div><textarea id="persp2" class="lg" placeholder="How did the policy affect Aboriginal Australians? Use quotes…"></textarea></div></div></div><h2 class="sec-head">The Stolen Generations</h2><p>Study the historical photographs and sources from your booklet:</p><div class="img-2col"><img class="page-img-half" src="page-08.jpg" alt="Booklet page 8" loading="lazy"><img class="page-img-half" src="page-09.jpg" alt="Booklet page 9" loading="lazy"></div><div class="vid-section">
+<div class="vid-label">📹 Watch</div>
+<div class="vid-title">The Stolen Generations</div>
+<video class="vid-player" controls preload="none">
+  <source src="2__Stolen_Generations.mp4" type="video/mp4">
+  Your browser does not support video.
+</video></div><div class="vid-section">
+<div class="vid-label">📹 Watch</div>
+<div class="vid-title">Took the Children Away — Archie Roach</div>
+<video class="vid-player" controls preload="none">
+  <source src="2__Took_the_Children_Away.mp4" type="video/mp4">
+  Your browser does not support video.
+</video></div><h2 class="sec-head">Australia's Stolen Generations Infographic</h2><p>Study this infographic carefully — you will need it to answer the questions below:</p><img class="page-img" src="page-10.jpg" alt="Booklet page 10" loading="lazy"><img class="page-img" src="page-11.jpg" alt="Booklet page 11" loading="lazy"><div class="q-section"><h3>Infographic Questions</h3><div class="q-item"><div class="q-label"><span class="q-num">1</span><span>Who produced this infographic? What do they want you to understand, and how do they want you to feel?</span></div>
+<textarea id="inf1" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">2</span><span>Why did the creators choose graphics over full sentences? Which style do you prefer? Explain.</span></div>
+<textarea id="inf2" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">3</span><span>List three significant numbers and explain what they mean:</span></div><div class="col-label" style="margin-bottom:0.3rem">Number 1:</div><textarea id="inf3a" style="min-height:65px" placeholder="e.g. 1 in 12 girls died while apprenticed — this means…"></textarea><div class="col-label" style="margin:0.5rem 0 0.3rem">Number 2:</div><textarea id="inf3b" style="min-height:65px" placeholder="e.g. $80m spent on surveillance vs $0.5m on support — this shows…"></textarea><div class="col-label" style="margin:0.5rem 0 0.3rem">Number 3:</div><textarea id="inf3c" style="min-height:65px" placeholder="e.g. 33% lost all contact with family — this tells us…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">4</span><span>What is your <strong>emotional response</strong> to this infographic? Refer to at least one graph or graphic.</span></div>
+<textarea id="inf4" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">5</span><span>Has the number of First Nations children in out-of-home care increased or decreased since the 1970s? What does that tell us?</span></div>
+<textarea id="inf5" placeholder="Write your answer here…"></textarea></div></div><img class="page-img" src="page-12.jpg" alt="Booklet page 12" loading="lazy"><div class="q-section"><h3>Stolen Generations Report</h3><p style="font-size:0.88rem;color:var(--muted);margin-bottom:0.75rem">After watching the videos and examining the sources, write a <strong>1–2 paragraph report</strong> addressing all the dot points shown in your booklet above.</p><textarea id="sgrep" class="xl" placeholder="Write your report here…"></textarea></div><div class="reflect"><h3>🪞 Lesson Reflection</h3><div class="q-item"><div class="q-label">What is the most important thing you learned in this lesson? Why does it matter?</div><textarea id="ref1" placeholder="Write your reflection here…"></textarea></div><div class="q-item"><div class="q-label">How did learning about these policies make you feel? What questions do you still have?</div><textarea id="ref2" placeholder="Write your reflection here…"></textarea></div><div class="q-item"><div class="q-label">Why is it important for all Australians — including non-Indigenous Australians — to understand this history?</div><textarea id="ref3" placeholder="Write your reflection here…"></textarea></div></div><div class="nav-links"><a href="index.html">← All Lessons</a><a href="lesson2.html">Next Lesson →</a></div></div><div class="save-bar">
+<p>Save your answers and submit to your teacher.</p>
+<button class="btn-save" onclick="doSave()">💾 Download Answers as Word Doc</button>
+</div>
+<script>
+function doSave(){
+  const name=(document.getElementById('sName')||{value:'Student'}).value||'Student';
+  let html=`<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='UTF-8'><style>body{font-family:Calibri,sans-serif;font-size:11pt;line-height:1.6;margin:2cm}h1{font-size:16pt;border-bottom:2pt solid #c0392b;padding-bottom:5pt}.meta{color:#666;font-size:9pt;margin-bottom:14pt}</style></head><body><h1>Lesson 1 White Australia Policy and Stolen Generations</h1><p class='meta'>Student: ${name} | Seaford Secondary College</p>`;
+  html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">White Australia Policy Questions</h2>';
+{const v=(document.getElementById('wap1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q1: Aim of the White Australia Policy</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('wap2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q2: Who suffered and how?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('wap3')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q3: Purpose of the Immigration Restriction Act 1901</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('wap4')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q4: Why did the Government exclude certain groups?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('wap5')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q5: How were people encouraged to immigrate?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Before, During & After</h2>';
+{const v=(document.getElementById('bda1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Before viewing: Your friends' cultural heritage</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('bda2a')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">During: Who was Al Grassby referring to?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('bda2b')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">During: Vietnamese accepted after 1975?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('bda2c')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">During: Immediate and long-term effects of abolition</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('bda3')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">After viewing: Political attitudes to refugees then vs now</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Perspectives Sorting Activity</h2>';
+{const v=(document.getElementById('persp1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Government aim — using quotes</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('persp2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Impact on Aboriginal Australians — using quotes</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Infographic Questions</h2>';
+{const v=(document.getElementById('inf1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Infographic Q1: Who produced it and why?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('inf2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Infographic Q2: Why use graphics?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('inf3a')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Infographic Q3 — Significant number 1</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('inf3b')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Infographic Q3 — Significant number 2</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('inf3c')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Infographic Q3 — Significant number 3</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('inf4')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Infographic Q4: Emotional response</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('inf5')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Infographic Q5: Out-of-home care trend</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Stolen Generations Report</h2>';
+{const v=(document.getElementById('sgrep')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Stolen Generations Report</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Lesson Reflection</h2>';
+{const v=(document.getElementById('ref1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Reflection: Most important thing learned</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ref2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Reflection: How it made you feel</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ref3')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Reflection: Why this history matters for all Australians</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+
+  html+='</body></html>';
+  const b=new Blob(['\ufeff',html],{type:'application/msword'});
+  const u=URL.createObjectURL(b);
+  const a=document.createElement('a');
+  a.href=u;a.download=`Lesson_1_White_Australia_Policy_and_Stolen_Generations_${name.replace(/\s+/g,'_')}.doc`;
+  a.click();URL.revokeObjectURL(u);
+}
+</script><script>
+["wap1", "wap2", "wap3", "wap4", "wap5", "bda1", "bda2a", "bda2b", "bda2c", "bda3", "persp1", "persp2", "inf1", "inf2", "inf3a", "inf3b", "inf3c", "inf4", "inf5", "sgrep", "ref1", "ref2", "ref3", "sName"].forEach(id=>{
+  const el=document.getElementById(id);
+  if(!el)return;
+  const s=localStorage.getItem('L1_'+id);
+  if(s)el.value=s;
+  el.addEventListener('input',()=>localStorage.setItem('L1_'+id,el.value));
+});
+</script></body></html>
