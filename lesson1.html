@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 1 – White Australia Policy & The Stolen Generations</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #1a1008;
+    --red: #c0392b;
+    --yellow: #e8b84b;
+    --ochre: #b5651d;
+    --cream: #fdf6e3;
+    --warm-grey: #e8dcc8;
+    --bg: #f7f0e0;
+    --text: #2a1f10;
+    --muted: #7a6550;
+    --border: #d4c4a8;
+    --accent-light: rgba(192,57,43,0.08);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  /* Top nav bar */
+  .topbar {
+    background: var(--black);
+    color: var(--cream);
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+  .topbar a { color: var(--yellow); text-decoration: none; }
+  .topbar a:hover { text-decoration: underline; }
+
+  /* Hero */
+  .hero {
+    background: var(--black);
+    color: var(--cream);
+    padding: 3rem 2rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--black) 0%, var(--red) 33%, var(--yellow) 66%, var(--ochre) 100%);
+  }
+  .hero-inner { max-width: 800px; margin: 0 auto; }
+  .lesson-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 0.5rem;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .meta-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+  }
+  .meta-item {
+    font-size: 0.8rem;
+    color: var(--warm-grey);
+  }
+  .meta-item strong { color: var(--yellow); }
+
+  /* Hook box */
+  .hook-box {
+    background: linear-gradient(135deg, #1a1008, #2d1a0a);
+    border: 1px solid rgba(232,184,75,0.3);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    color: var(--cream);
+  }
+  .hook-box .hook-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 0.75rem;
+  }
+  .hook-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--warm-grey);
+  }
+
+  /* Main content area */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  /* Learning intention */
+  .learning-intention {
+    background: white;
+    border-left: 4px solid var(--red);
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .learning-intention h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 0.5rem;
+  }
+  .learning-intention p { font-size: 0.95rem; color: var(--text); }
+
+  /* Warning */
+  .warning-box {
+    background: #fff8f7;
+    border: 1px solid rgba(192,57,43,0.3);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-size: 0.85rem;
+    color: #8a2020;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+  }
+
+  /* Section headings */
+  .section {
+    margin: 2.5rem 0 1rem;
+  }
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--black);
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--ochre);
+    margin: 1.25rem 0 0.5rem;
+  }
+
+  p { margin-bottom: 0.75rem; }
+
+  /* Info box */
+  .info-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  }
+  .info-box.definition {
+    background: #fffbf0;
+    border-left: 3px solid var(--yellow);
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* Quote */
+  .quote-block {
+    border-left: 4px solid var(--red);
+    padding: 1rem 1.5rem;
+    margin: 1.25rem 0;
+    background: var(--accent-light);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #4a2a1a;
+  }
+  .quote-block cite {
+    display: block;
+    font-size: 0.82rem;
+    font-style: normal;
+    margin-top: 0.5rem;
+    color: var(--muted);
+  }
+
+  /* Vocab grid */
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  .vocab-item {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 0.88rem;
+  }
+  .vocab-item strong {
+    display: block;
+    color: var(--red);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+  }
+
+  /* Image placeholder */
+  .img-container {
+    margin: 1.25rem 0;
+  }
+  .img-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .img-box {
+    background: #e8e0d0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .img-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  .img-caption {
+    font-size: 0.75rem;
+    color: var(--muted);
+    padding: 0.5rem;
+    font-style: italic;
+  }
+
+  /* Video embed */
+  .video-section {
+    background: var(--black);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--cream);
+  }
+  .video-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 0.5rem;
+  }
+  .video-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  .video-player {
+    width: 100%;
+    border-radius: 8px;
+    background: #000;
+    display: block;
+  }
+  .video-note {
+    font-size: 0.78rem;
+    color: #a09080;
+    margin-top: 0.5rem;
+  }
+
+  /* Question sections */
+  .questions-section {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  }
+  .questions-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--black);
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .question-item {
+    margin-bottom: 1.75rem;
+  }
+  .question-label {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+  }
+  .question-label .q-num {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 0.6rem;
+    flex-shrink: 0;
+  }
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 0.92rem;
+    color: var(--text);
+    background: #fffef9;
+    resize: vertical;
+    transition: border-color 0.2s;
+    line-height: 1.6;
+  }
+  textarea:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(192,57,43,0.08);
+  }
+  textarea.large { min-height: 180px; }
+
+  /* Two-column perspectives */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.75rem;
+  }
+  @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+
+  .col-box h4 {
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+
+  /* Lyrics */
+  .lyrics-box {
+    background: #fffbf2;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--yellow);
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 2;
+    margin: 1rem 0;
+  }
+
+  /* Reflection */
+  .reflection-section {
+    background: linear-gradient(135deg, #1a1008, #2d1a0a);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    color: var(--cream);
+  }
+  .reflection-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+  }
+  .reflection-section textarea {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.2);
+    color: var(--cream);
+  }
+  .reflection-section textarea:focus {
+    border-color: var(--yellow);
+    box-shadow: 0 0 0 3px rgba(232,184,75,0.12);
+  }
+  .reflection-section .question-label { color: var(--warm-grey); }
+
+  /* Student name */
+  .student-name-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .student-name-box label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    color: var(--text);
+  }
+  .student-name-box input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  .student-name-box input:focus {
+    outline: none;
+    border-color: var(--red);
+  }
+
+  /* Save button */
+  .save-bar {
+    position: sticky;
+    bottom: 0;
+    background: var(--black);
+    padding: 0.9rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 100;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    flex-wrap: wrap;
+  }
+  .save-bar p {
+    font-size: 0.8rem;
+    color: var(--warm-grey);
+    margin: 0;
+  }
+  .btn-save {
+    background: var(--yellow);
+    color: var(--black);
+    border: none;
+    padding: 0.7rem 1.75rem;
+    border-radius: 6px;
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+  }
+  .btn-save:hover { background: #f0c85a; }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  .nav-links a {
+    color: var(--red);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .nav-links a:hover { text-decoration: underline; }
+
+  ul { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+  ul li { margin-bottom: 0.3rem; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.88rem;
+  }
+  th {
+    background: var(--black);
+    color: var(--cream);
+    padding: 0.6rem 1rem;
+    text-align: left;
+  }
+  td {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: #f5ece0; }
+
+  .before-during-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.75rem;
+  }
+  @media (max-width: 600px) { .before-during-after { grid-template-columns: 1fr; } }
+  .bda-box h4 {
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Indigenous Australians Civil Rights Movement</span>
+  <a href="index.html">← Back to all lessons</a>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="lesson-label">Lesson 1 of 4</div>
+    <h1>White Australia Policy &amp; The Stolen Generations</h1>
+    <div class="meta-row">
+      <span class="meta-item"><strong>Topics:</strong> White Australia Policy · Assimilation · Stolen Generations · Infographic Analysis</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="hook-box">
+    <div class="hook-label">💭 Thinking Question — Before We Begin</div>
+    <p>Imagine the government passed a law that said only certain types of people were welcome to live in Australia, and everyone else would be forced to leave or change who they are. How do you think people would react today? Who would be affected, and why does it matter?</p>
+  </div>
+
+  <div class="learning-intention">
+    <h3>🎯 Learning Intention</h3>
+    <p>By the end of this lesson, I will be able to explain the purpose of the White Australia Policy and the Assimilation Policy, describe who was affected and how, and analyse primary sources including personal accounts and infographics to understand the impact of the Stolen Generations on First Nations communities.</p>
+  </div>
+
+  <div class="warning-box">
+    ⚠️ <strong>Warning:</strong> This lesson contains historical images, stories and film involving First Nations peoples, including images of deceased persons. Please engage with all materials with care and respect.
+  </div>
+
+  <div class="student-name-box">
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" placeholder="Type your full name here…">
+  </div>
+
+  <!-- ===== SECTION 1: WHITE AUSTRALIA POLICY ===== -->
+  <div class="section">
+    <h2>The White Australia Policy</h2>
+
+    <div class="info-box definition">
+      <strong>What is the White Australia Policy?</strong>
+      <p style="margin-top:0.4rem;">This term refers to a collection of Government policies introduced during the 1800s to mid-1900s to keep Australia 'white' — or mostly of European descent.</p>
+    </div>
+
+    <div class="img-row">
+      <div class="img-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/John_Forrest_portrait.jpg/220px-John_Forrest_portrait.jpg" alt="Sir John Forrest" onerror="this.style.display='none'">
+        <div class="img-caption">Sir John Forrest, WA Premier who supported the policy at the 1898 Federation Convention</div>
+      </div>
+      <div class="img-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/White_Australia_March.jpg/320px-White_Australia_March.jpg" alt="White Australia March poster" onerror="this.style.display='none'">
+        <div class="img-caption">"March of the Great White Policy" — propaganda poster of the era</div>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      "It is of no use to shut our eyes to the fact that there is a great feeling all over Australia against the introduction of coloured persons. It goes without saying that we do not like to talk about it, but it is so."
+      <cite>— Sir John Forrest, WA Premier, 1898 Australasian Federation Convention</cite>
+    </div>
+
+    <div class="quote-block">
+      "We can bring in, without delay, our kinsmen from Britain and, if the numbers be insufficient, such other white races as will assimilate with our own. Or we can…see the doors of our house forced, and streams of people from the lands where there is hardly standing room pour in and submerge us."
+      <cite>— Edmund Barton, Prime Minister of Australia, 1902</cite>
+    </div>
+
+    <h3>The Immigration Restriction Act 1901</h3>
+    <ul>
+      <li>The government limited immigration to Australia by excluding all non-Europeans and deporting any already here.</li>
+      <li>The Act also prohibited other "undesirables" — people with infectious diseases, recently imprisoned, or those deemed "idiots" or "insane."</li>
+      <li>Dictation tests were given to exclude any person who could not write a passage of 50 words in a European language chosen by the officer.</li>
+      <li>This Act was officially in place until 1958.</li>
+    </ul>
+
+    <div class="vocab-grid">
+      <div class="vocab-item"><strong>Federation</strong>A group of countries/states joined together under one government.</div>
+      <div class="vocab-item"><strong>Immigration</strong>The action of coming to live permanently in a foreign country.</div>
+      <div class="vocab-item"><strong>Restriction</strong>A limiting condition or legal measure.</div>
+      <div class="vocab-item"><strong>Deported</strong>Expelled from a country, often on the grounds of illegal status.</div>
+      <div class="vocab-item"><strong>Prohibited</strong>Forbidden; banned.</div>
+      <div class="vocab-item"><strong>Dictation</strong>Saying words aloud for another person to write down.</div>
+    </div>
+  </div>
+
+  <!-- VIDEO: ABC Education -->
+  <div class="video-section">
+    <div class="video-label">📹 Watch — Before, During &amp; After</div>
+    <div class="video-title">Ending the White Australia Policy (ABC Education)</div>
+    <video class="video-player" controls>
+      <source src="1__ABC_EDUCATION_1245290.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+    <p class="video-note">Note: This video explores the impacts of ending the White Australia Policy, including perspectives from former immigration ministers and communities affected.</p>
+  </div>
+
+  <!-- Q: White Australia Policy Questions -->
+  <div class="questions-section">
+    <h3>White Australia Policy Questions</h3>
+
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">1</span>What was the <strong>aim</strong> of the 'White Australia Policy'? Was it successful?</div>
+      <textarea id="wap_q1" placeholder="Write your answer here…"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">2</span>Who <strong>suffered</strong> because of this policy, and how?</div>
+      <textarea id="wap_q2" placeholder="Write your answer here…"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">3</span>What was the <strong>purpose</strong> of the 'Immigration Restriction Act 1901'?</div>
+      <textarea id="wap_q3" placeholder="Write your answer here…" class="large"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">4</span>Why do you think the Government <strong>excluded</strong> certain groups from being allowed to immigrate to Australia?</div>
+      <textarea id="wap_q4" placeholder="Write your answer here…" class="large"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">5</span>How were people encouraged to immigrate to Australia? What groups were <strong>targeted</strong>?</div>
+      <textarea id="wap_q5" placeholder="Write your answer here…"></textarea>
+    </div>
+  </div>
+
+  <!-- Q: Before During After -->
+  <div class="questions-section">
+    <h3>Ending the White Australia Policy — Before, During &amp; After Questions</h3>
+
+    <div class="question-item">
+      <div class="question-label">1. <strong>Before viewing:</strong> Until the end of World War II, most Australians were of British or Irish heritage. Think about your group of friends — how would you describe their cultural heritage? Are they all from the same place, or do they come from different countries?</div>
+      <textarea id="bda_q1" placeholder="Write your response here…"></textarea>
+    </div>
+
+    <div class="question-label" style="margin-bottom:0.5rem;">2. <strong>During viewing:</strong></div>
+    <div class="question-item">
+      <div class="question-label">Who do you think former Minister for Immigration Al Grassby might have been referring to as being upset about the end of the White Australia policy?</div>
+      <textarea id="bda_q2a" placeholder="Write your answer here…"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label">Why were so many Vietnamese people accepted into Australia after 1975? What impact did this have on the country in the decades that followed?</div>
+      <textarea id="bda_q2b" placeholder="Write your answer here…"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label">According to the people interviewed, what were the immediate and long-term effects of the abolition of the White Australia policy?</div>
+      <textarea id="bda_q2c" placeholder="Write your answer here…"></textarea>
+    </div>
+
+    <div class="question-item">
+      <div class="question-label">3. <strong>After viewing:</strong> Former Minister Ian Macphee states that when he was in government (1979–82), there was total bipartisanship on accepting refugees. How are the attitudes of the main political parties different now? What do you think has caused the changes?</div>
+      <textarea id="bda_q3" placeholder="Write your answer here…" class="large"></textarea>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 2: ASSIMILATION & STOLEN GENERATIONS ===== -->
+  <div class="section">
+    <h2>The Assimilation Policy &amp; The Stolen Generations</h2>
+
+    <p>Mr Auber Neville was Chief Protector of Aborigines (1915–1936) and Commissioner of Native Affairs until 1940. He strongly believed in the permanent <strong>segregation</strong> of full-blooded Aborigines and recommended "breeding out" Aboriginal genes by reproducing with white people — a process he called <em>assimilation</em>.</p>
+
+    <div class="vocab-grid">
+      <div class="vocab-item"><strong>Segregation</strong>The enforced separation of different racial groups in a country, community or establishment.</div>
+      <div class="vocab-item"><strong>Assimilation</strong>The process of absorbing one group into another dominant culture, often forcibly.</div>
+    </div>
+
+    <div class="quote-block">
+      "Are we going to have a population of one million blacks...or are we going to merge them into our white community and eventually forget that there were ever any Aborigines?"
+      <cite>— Neville at the Native Welfare Conference, 1937</cite>
+    </div>
+
+    <div class="quote-block">
+      "This Conference believes that the destiny of the natives of aboriginal origin, but not of full blood, lies in their ultimate absorption by the people of the Commonwealth, and it therefore recommends that all efforts be directed to that end...The policy of the Commonwealth is to do everything possible to convert the half-caste into a white citizen."
+      <cite>— Native Welfare Conference, 1937</cite>
+    </div>
+
+    <p>From the 1890s to the 1970s, the Australian Government used the law to remove First Nations children from their families. These children became known as the <strong>Stolen Generations</strong>.</p>
+
+    <div class="quote-block">
+      "Assimilation relied on the well-established and widely-accepted view that we were inferior to white Australians, that our way of life, our culture and our languages were substandard... Embedded within the policy of assimilation was a clear expectation of the cultural extinction of Indigenous peoples."
+      <cite>— Professor Michael Dodson, Leading Indigenous Academic</cite>
+    </div>
+
+    <div class="quote-block">
+      "I grew up feeling alone, a black girl in a white world, and I resented them for trying to make me white but they couldn't wash away thousands of years of dreaming."
+      <cite>— Aunty Rhonda Collard, member of the Stolen Generations</cite>
+    </div>
+
+    <div class="quote-block">
+      "We were each handed a pair of pyjamas with a number Mr Borland, the manager, had given us earlier printed on the pocket, and a shirt and pair of shorts also. I was number 33. Not Bill. Not even Simon. Just number 33."
+      <cite>— Bill Simon, taken away aged 10</cite>
+    </div>
+  </div>
+
+  <!-- VIDEO: Stolen Generations -->
+  <div class="video-section">
+    <div class="video-label">📹 Watch</div>
+    <div class="video-title">The Stolen Generations</div>
+    <video class="video-player" controls>
+      <source src="2__Stolen_Generations.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+  <!-- VIDEO: Took the Children Away -->
+  <div class="video-section">
+    <div class="video-label">📹 Watch &amp; Listen</div>
+    <div class="video-title">Took the Children Away — Archie Roach</div>
+    <video class="video-player" controls>
+      <source src="2__Took_the_Children_Away.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+    <div class="lyrics-box" style="margin-top:1rem;">
+      The welfare and the policeman / Said you've got to understand / We'll give them what you can't give / Teach them how to really live. / Teach them how to live they said / Humiliated them instead / Taught them that and taught them this / And others taught them prejudice.
+    </div>
+  </div>
+
+  <!-- Perspectives Sorting Activity -->
+  <div class="questions-section">
+    <h3>Perspectives Sorting Activity</h3>
+    <p style="font-size:0.9rem;color:var(--muted);margin-bottom:1rem;">Using the quotes from the booklet, sort the perspectives into the two boxes below.</p>
+    <div class="two-col">
+      <div class="col-box">
+        <h4>What was the aim of the assimilation policy? Explain why the Australian government created this policy using quotes:</h4>
+        <textarea id="persp_gov" class="large" placeholder="Explain the government's perspective using quotes from the sources…"></textarea>
+      </div>
+      <div class="col-box">
+        <h4>How did the assimilation policy affect Aboriginal Australians? Explain how Aboriginal people felt about this policy using quotes:</h4>
+        <textarea id="persp_ab" class="large" placeholder="Explain the Aboriginal perspective using quotes from the sources…"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- Infographic Questions -->
+  <div class="questions-section">
+    <h3>Infographic Questions — Australia's Stolen Generations</h3>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1rem;">Refer to the Stolen Generations infographic in your booklet (p.10) to answer these questions.</p>
+
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">1</span>Who do you think has produced this infographic? What do they want you to understand, and how do they want you to feel?</div>
+      <textarea id="infog_q1" placeholder="Write your answer here…" class="large"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">2</span>The creators chose to use graphs and graphics rather than full sentences. Why might they have chosen this style? Which would you prefer — the infographic style, or print text with no graphics? Explain your reasons.</div>
+      <textarea id="infog_q2" placeholder="Write your answer here…" class="large"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">3</span>What do the numbers tell us about the treatment of First Nations Peoples? List three significant numbers and explain what they mean:</div>
+      <div style="margin-top:0.5rem;">
+        <div style="margin-bottom:0.5rem;font-size:0.88rem;color:var(--muted);">Number 1:</div>
+        <textarea id="infog_q3a" style="min-height:70px;" placeholder="e.g. 1 in 12 girls died while apprenticed — this shows…"></textarea>
+        <div style="margin:0.5rem 0;font-size:0.88rem;color:var(--muted);">Number 2:</div>
+        <textarea id="infog_q3b" style="min-height:70px;" placeholder="e.g. $80 million spent on surveillance vs $0.5m on support — this shows…"></textarea>
+        <div style="margin:0.5rem 0;font-size:0.88rem;color:var(--muted);">Number 3:</div>
+        <textarea id="infog_q3c" style="min-height:70px;" placeholder="e.g. 33% lost all contact with family — this shows…"></textarea>
+      </div>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">4</span>As well as understanding the numbers, what is your emotional response to this infographic? Explain why, making reference to at least one graph or graphic.</div>
+      <textarea id="infog_q4" class="large" placeholder="Write your answer here…"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label"><span class="q-num">5</span>Has the number of First Nations children living in out-of-home care increased or decreased since the 1970s? What does that tell us?</div>
+      <textarea id="infog_q5" placeholder="Write your answer here…"></textarea>
+    </div>
+  </div>
+
+  <!-- Stolen Generations Report -->
+  <div class="questions-section">
+    <h3>Stolen Generations Report</h3>
+    <p style="font-size:0.9rem;color:var(--muted);margin-bottom:1rem;">After viewing the video and examining the primary sources, write a <strong>1–2 paragraph report</strong> in the box below. Your report should answer these questions:</p>
+    <ul style="font-size:0.88rem;color:var(--muted);margin-bottom:1rem;">
+      <li>Who specifically were 'stolen' and who stole them?</li>
+      <li>What happened to the Stolen Generations?</li>
+      <li>Where did the children go once removed?</li>
+      <li>When did this practice occur? (which decades)</li>
+      <li>Why did the Government remove so many Indigenous children?</li>
+      <li>How did being removed affect the children's lives?</li>
+      <li>What were some long-term impacts for children removed from their families?</li>
+      <li>What long-term impacts has this had on relationships between Indigenous and non-Indigenous Australians?</li>
+    </ul>
+    <div class="question-item">
+      <div class="question-label">My Report:</div>
+      <textarea id="sg_report" style="min-height:260px;" placeholder="Write your 1–2 paragraph report here…"></textarea>
+    </div>
+  </div>
+
+  <!-- Reflection -->
+  <div class="reflection-section">
+    <h3>🪞 Lesson Reflection</h3>
+    <p style="color:var(--warm-grey);font-size:0.9rem;margin-bottom:1.25rem;">Take a few minutes to think about what you've learned in this lesson before saving your work.</p>
+
+    <div class="question-item">
+      <div class="question-label">What is the most important thing you learned in this lesson? Why does it matter?</div>
+      <textarea id="ref_q1" placeholder="Write your reflection here…"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label">How did learning about these policies and their effects make you feel? What questions do you still have?</div>
+      <textarea id="ref_q2" placeholder="Write your reflection here…"></textarea>
+    </div>
+    <div class="question-item">
+      <div class="question-label">Why is it important for all Australians — including non-Indigenous Australians — to understand this history?</div>
+      <textarea id="ref_q3" placeholder="Write your reflection here…"></textarea>
+    </div>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">← Back to Lessons</a>
+    <a href="lesson2.html">Lesson 2 →</a>
+  </div>
+
+</div><!-- /content -->
+
+<div class="save-bar">
+  <p>Remember to save your work as a Word document and submit it to your teacher.</p>
+  <button class="btn-save" onclick="saveAsWord()">💾 Save &amp; Download as Word Doc</button>
+</div>
+
+<script>
+function saveAsWord() {
+  const name = document.getElementById('studentName').value || 'Student';
+  
+  const fields = [
+    { id: 'wap_q1', label: 'Q1: What was the aim of the White Australia Policy? Was it successful?' },
+    { id: 'wap_q2', label: 'Q2: Who suffered because of this policy, and how?' },
+    { id: 'wap_q3', label: 'Q3: What was the purpose of the Immigration Restriction Act 1901?' },
+    { id: 'wap_q4', label: 'Q4: Why did the Government exclude certain groups?' },
+    { id: 'wap_q5', label: 'Q5: How were people encouraged to immigrate? What groups were targeted?' },
+    { id: 'bda_q1', label: 'Before Viewing: Cultural heritage of your friend group' },
+    { id: 'bda_q2a', label: 'During Viewing: Who was Al Grassby referring to?' },
+    { id: 'bda_q2b', label: 'During Viewing: Why were Vietnamese people accepted after 1975?' },
+    { id: 'bda_q2c', label: 'During Viewing: Immediate and long-term effects of abolition' },
+    { id: 'bda_q3', label: 'After Viewing: Political attitudes to refugees then vs now' },
+    { id: 'persp_gov', label: 'Perspectives – Government aim (with quotes)' },
+    { id: 'persp_ab', label: 'Perspectives – Impact on Aboriginal Australians (with quotes)' },
+    { id: 'infog_q1', label: 'Infographic Q1: Who produced it and what do they want you to understand?' },
+    { id: 'infog_q2', label: 'Infographic Q2: Why use graphics rather than text?' },
+    { id: 'infog_q3a', label: 'Infographic Q3a: Significant number 1' },
+    { id: 'infog_q3b', label: 'Infographic Q3b: Significant number 2' },
+    { id: 'infog_q3c', label: 'Infographic Q3c: Significant number 3' },
+    { id: 'infog_q4', label: 'Infographic Q4: Emotional response' },
+    { id: 'infog_q5', label: 'Infographic Q5: Out-of-home care trend' },
+    { id: 'sg_report', label: 'Stolen Generations Report' },
+    { id: 'ref_q1', label: 'Reflection 1: Most important thing learned' },
+    { id: 'ref_q2', label: 'Reflection 2: How this made you feel / remaining questions' },
+    { id: 'ref_q3', label: 'Reflection 3: Why this history matters for all Australians' },
+  ];
+
+  let html = `
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+    <head><meta charset="UTF-8"><title>Lesson 1</title>
+    <style>
+      body { font-family: Calibri, sans-serif; font-size: 11pt; line-height: 1.6; margin: 2cm; }
+      h1 { font-size: 18pt; color: #1a1008; border-bottom: 2pt solid #c0392b; padding-bottom: 6pt; }
+      h2 { font-size: 13pt; color: #c0392b; margin-top: 18pt; }
+      .meta { font-size: 10pt; color: #666; margin-bottom: 18pt; }
+      .q-label { font-weight: bold; font-size: 10.5pt; margin-top: 14pt; margin-bottom: 4pt; color: #2a1f10; }
+      .answer { border: 1pt solid #ccc; padding: 8pt; min-height: 60pt; background: #fffef9; font-size: 10.5pt; white-space: pre-wrap; }
+      .section-heading { font-size: 14pt; font-weight: bold; color: #1a1008; border-bottom: 1pt solid #e8b84b; margin-top: 24pt; padding-bottom: 4pt; }
+      .reflection-heading { font-size: 14pt; font-weight: bold; color: #c0392b; margin-top: 24pt; }
+    </style></head><body>
+    <h1>Lesson 1: White Australia Policy &amp; The Stolen Generations</h1>
+    <div class="meta">Student: ${name} &nbsp;|&nbsp; Indigenous Australians Civil Rights Movement &nbsp;|&nbsp; Seaford Secondary College</div>
+  `;
+
+  const sections = [
+    { heading: 'White Australia Policy Questions', ids: ['wap_q1','wap_q2','wap_q3','wap_q4','wap_q5'] },
+    { heading: 'Ending the White Australia Policy — Before, During, After', ids: ['bda_q1','bda_q2a','bda_q2b','bda_q2c','bda_q3'] },
+    { heading: 'Perspectives Sorting Activity', ids: ['persp_gov','persp_ab'] },
+    { heading: 'Infographic Questions', ids: ['infog_q1','infog_q2','infog_q3a','infog_q3b','infog_q3c','infog_q4','infog_q5'] },
+    { heading: 'Stolen Generations Report', ids: ['sg_report'] },
+    { heading: 'Lesson Reflection', ids: ['ref_q1','ref_q2','ref_q3'] },
+  ];
+
+  sections.forEach(section => {
+    html += `<div class="section-heading">${section.heading}</div>`;
+    section.ids.forEach(id => {
+      const field = fields.find(f => f.id === id);
+      const val = (document.getElementById(id).value || '(No answer provided)').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      html += `<div class="q-label">${field.label}</div><div class="answer">${val}</div>`;
+    });
+  });
+
+  html += '</body></html>';
+
+  const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `Lesson1_WhiteAustraliaPolicy_${name.replace(/\s+/g,'_')}.doc`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// Auto-save to localStorage
+const inputs = document.querySelectorAll('textarea, input');
+inputs.forEach(el => {
+  const saved = localStorage.getItem('l1_' + el.id);
+  if (saved) el.value = saved;
+  el.addEventListener('input', () => localStorage.setItem('l1_' + el.id, el.value));
+});
+</script>
+</body>
+</html>
