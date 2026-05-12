@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2 – The Freedom Rides & Wave Hill Walk-Off</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>:root{--accent-color:#b5651d;}:root {
+  --black: #1a1008; --red: #c0392b; --yellow: #e8b84b; --ochre: #b5651d;
+  --cream: #fdf6e3; --warm-grey: #e8dcc8; --bg: #f5ede0; --text: #2a1f10;
+  --muted: #7a6550; --border: #d4c4a8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Source Serif 4',Georgia,serif; font-size:1rem; line-height:1.75; }
+.topbar { background:var(--black); color:var(--cream); padding:0.6rem 2rem; display:flex; align-items:center; justify-content:space-between; font-size:0.82rem; }
+.topbar a { color:var(--yellow); text-decoration:none; }
+.topbar a:hover { text-decoration:underline; }
+.hero { background:var(--black); color:var(--cream); padding:2.5rem 2rem 2rem; position:relative; }
+.hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:5px; background:linear-gradient(90deg,var(--black),var(--red),var(--yellow)); }
+.hero-inner { max-width:860px; margin:0 auto; }
+.lesson-label { font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.4rem; }
+.hero h1 { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,4.5vw,2.8rem); font-weight:900; line-height:1.15; }
+.content { max-width:860px; margin:0 auto; padding:0 1.5rem 5rem; }
+/* Hook */
+.hook-box { background:linear-gradient(135deg,#1f1208,#2d1a0a); border:1px solid rgba(232,184,75,0.35); border-radius:10px; padding:1.5rem 1.75rem; margin:2rem 0 1.5rem; color:var(--cream); }
+.hook-label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.6rem; }
+.hook-box p { font-size:1.05rem; font-style:italic; color:var(--warm-grey); line-height:1.7; }
+/* Learning intention */
+.li-box { background:white; border-left:4px solid var(--accent-color,var(--red)); border-radius:0 8px 8px 0; padding:1.1rem 1.4rem; margin:1.5rem 0; box-shadow:0 2px 10px rgba(0,0,0,0.06); }
+.li-box .li-label { font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent-color,var(--red)); margin-bottom:0.4rem; font-weight:700; }
+.li-box p { font-size:0.93rem; }
+/* Warning */
+.warn { background:#fff7f7; border:1px solid rgba(192,57,43,0.3); border-radius:8px; padding:0.9rem 1.2rem; font-size:0.84rem; color:#8a2020; margin:1.25rem 0; line-height:1.65; }
+/* Student name */
+.name-row { background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.4rem; margin:1.25rem 0; display:flex; align-items:center; gap:1rem; }
+.name-row label { font-weight:600; font-size:0.9rem; white-space:nowrap; }
+.name-row input { flex:1; padding:0.45rem 0.7rem; border:1px solid var(--border); border-radius:4px; font-family:'Source Serif 4',Georgia,serif; font-size:0.95rem; color:var(--text); }
+/* Section headings */
+.sec-head { font-family:'Playfair Display',serif; font-size:1.55rem; font-weight:800; color:var(--black); border-bottom:3px solid var(--accent-color,var(--red)); padding-bottom:0.35rem; margin:2.5rem 0 1rem; }
+.sub-head { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--accent-color,var(--ochre)); margin:1.5rem 0 0.5rem; }
+p { margin-bottom:0.7rem; }
+ul,ol { padding-left:1.6rem; margin-bottom:0.75rem; }
+li { margin-bottom:0.3rem; }
+/* Booklet page images */
+.page-img { width:100%; border:1px solid var(--border); border-radius:8px; box-shadow:0 3px 16px rgba(0,0,0,0.12); margin:1.25rem 0; display:block; }
+.page-img-half { width:100%; border:1px solid var(--border); border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1); display:block; }
+.img-2col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.25rem 0; }
+.img-3col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; margin:1.25rem 0; }
+@media(max-width:600px) { .img-2col,.img-3col { grid-template-columns:1fr; } }
+/* Quote */
+.quote { border-left:4px solid var(--accent-color,var(--red)); background:rgba(192,57,43,0.05); padding:0.9rem 1.4rem; margin:1.1rem 0; border-radius:0 8px 8px 0; font-style:italic; color:#3a1a0a; }
+.quote cite { display:block; font-size:0.8rem; font-style:normal; margin-top:0.4rem; color:var(--muted); }
+/* Vocab */
+.vocab-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:0.6rem; margin:1rem 0; }
+.voc { background:white; border:1px solid var(--border); border-radius:6px; padding:0.65rem 0.9rem; font-size:0.86rem; }
+.voc strong { display:block; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--accent-color,var(--red)); margin-bottom:0.15rem; }
+/* Info box */
+.info { background:#fffbf2; border-left:3px solid var(--yellow); border-radius:0 8px 8px 0; padding:1rem 1.3rem; margin:1rem 0; font-size:0.93rem; }
+/* Video */
+.vid-section { background:var(--black); border-radius:12px; padding:1.4rem; margin:1.75rem 0; color:var(--cream); }
+.vid-label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.4rem; }
+.vid-title { font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:0.7rem; }
+.vid-player { width:100%; border-radius:8px; display:block; background:#000; max-height:480px; }
+.vid-note { font-size:0.76rem; color:#9a8878; margin-top:0.5rem; }
+/* Q sections */
+.q-section { background:white; border:1px solid var(--border); border-radius:12px; padding:1.6rem 1.75rem; margin:2rem 0; box-shadow:0 2px 14px rgba(0,0,0,0.06); }
+.q-section h3 { font-family:'Playfair Display',serif; font-size:1.2rem; border-bottom:2px solid var(--yellow); padding-bottom:0.45rem; margin-bottom:1.2rem; }
+.q-item { margin-bottom:1.6rem; }
+.q-label { font-weight:600; font-size:0.93rem; margin-bottom:0.4rem; display:flex; gap:0.5rem; align-items:flex-start; }
+.q-num { background:var(--accent-color,var(--red)); color:white; border-radius:50%; width:1.55rem; height:1.55rem; min-width:1.55rem; display:flex; align-items:center; justify-content:center; font-size:0.78rem; font-weight:700; margin-top:0.05rem; }
+textarea { width:100%; min-height:96px; padding:0.7rem 0.95rem; border:1px solid var(--border); border-radius:6px; font-family:'Source Serif 4',Georgia,serif; font-size:0.9rem; color:var(--text); background:#fffef9; resize:vertical; line-height:1.65; transition:border-color 0.2s,box-shadow 0.2s; }
+textarea:focus { outline:none; border-color:var(--accent-color,var(--red)); box-shadow:0 0 0 3px rgba(192,57,43,0.08); }
+textarea.lg { min-height:160px; }
+textarea.xl { min-height:240px; }
+/* Two col answers */
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; }
+@media(max-width:600px) { .two-col,.three-col { grid-template-columns:1fr; } }
+.col-label { font-size:0.76rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); margin-bottom:0.35rem; font-weight:700; }
+/* Reflection */
+.reflect { background:linear-gradient(135deg,#1a1008,#2e1a0a); border-radius:12px; padding:1.75rem 2rem; margin:2.5rem 0; color:var(--cream); }
+.reflect h3 { font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--yellow); margin-bottom:1rem; }
+.reflect .q-label { color:var(--warm-grey); }
+.reflect textarea { background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.18); color:var(--cream); }
+.reflect textarea:focus { border-color:var(--yellow); box-shadow:0 0 0 3px rgba(232,184,75,0.12); }
+/* Save bar */
+.save-bar { position:sticky; bottom:0; background:var(--black); padding:0.85rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; z-index:100; box-shadow:0 -4px 20px rgba(0,0,0,0.35); flex-wrap:wrap; }
+.save-bar p { font-size:0.78rem; color:var(--warm-grey); margin:0; }
+.btn-save { background:var(--yellow); color:var(--black); border:none; padding:0.65rem 1.6rem; border-radius:6px; font-family:'Source Serif 4',serif; font-size:0.88rem; font-weight:700; cursor:pointer; transition:background 0.18s; letter-spacing:0.02em; }
+.btn-save:hover { background:#f5cb55; }
+/* Nav */
+.nav-links { display:flex; justify-content:space-between; margin:2rem 0 0.5rem; }
+.nav-links a { color:var(--accent-color,var(--red)); text-decoration:none; font-size:0.88rem; }
+.nav-links a:hover { text-decoration:underline; }
+/* Table */
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:0.86rem; }
+th { background:var(--black); color:var(--cream); padding:0.55rem 0.85rem; text-align:left; }
+td { padding:0.45rem 0.85rem; border:1px solid var(--border); }
+tr:nth-child(even) td { background:#f5ece0; }
+</style>
+</head><body><div class="topbar"><span>Indigenous Australians Civil Rights Movement</span><div style="display:flex;gap:1.5rem"><a href="lesson1.html">← Back</a><a href="lesson3.html">Next Lesson →</a></div></div><div class="hero"><div class="hero-inner">
+<div class="lesson-label">Lesson 2 of 4</div>
+<h1>The Freedom Rides &amp; Wave Hill Walk-Off</h1>
+</div></div><div class="content"><div class="hook-box"><div class="hook-label">💭 Thinking Question</div><p>If you saw someone being treated unfairly because of who they are, what would you do? What does it take to stand up for someone else's rights — especially when it's uncomfortable or unpopular?</p></div><div class="li-box" style="--accent-color:#b5651d"><div class="li-label">🎯 Learning Intention</div><p>By the end of this lesson I can explain the purpose and outcomes of the Freedom Rides, compare them with the American Freedom Rides using a Venn diagram, describe the Wave Hill Walk-Off and its significance, and analyse a song as a historical source.</p></div><div class="warn">⚠️ <strong>Warning:</strong> The video 'Have you ever met an Aboriginal?' contains terminology no longer considered appropriate — this is noted below.</div><div class="name-row"><label for="sName">Student Name:</label><input type="text" id="sName" placeholder="Type your full name…"></div><h2 class="sec-head" style="border-color:#b5651d">The Freedom Rides</h2><p>Study the Freedom Rides information from your booklet:</p><img class="page-img" src="images/page-13.jpg" alt="Booklet page 13" loading="lazy"><div class="vid-section">
+<div class="vid-label">📹 Watch</div>
+<div class="vid-title">Have you ever met an Aboriginal?</div>
+<video class="vid-player" controls preload="none">
+  <source src="3___Have_you_ever_met_an_aboriginal_.mp4" type="video/mp4">
+  Your browser does not support video.
+</video><p class="vid-note">⚠️ The term 'Aboriginie' used in this historical footage is no longer appropriate. Use 'Aboriginal' or 'First Nations Peoples'.</p></div><div class="vid-section">
+<div class="vid-label">📹 Watch</div>
+<div class="vid-title">Charles Perkins — Interview</div>
+<video class="vid-player" controls preload="none">
+  <source src="4__CharlesPerkins.mp4" type="video/mp4">
+  Your browser does not support video.
+</video></div><img class="page-img" src="images/page-14.jpg" alt="Booklet page 14" loading="lazy"><div class="q-section"><h3>Freedom Rides Questions</h3><div class="q-item"><div class="q-label"><span class="q-num">1</span><span>Based on the answers at the beginning of the video, how did the <strong>public feel</strong> about Aboriginal and Torres Strait Islander peoples?</span></div>
+<textarea id="fr1" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">2</span><span>How much do you think most Australians <strong>knew</strong> about Aboriginal and Torres Strait Islander peoples at this time?</span></div>
+<textarea id="fr2" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">3</span><span>What sort of <strong>changes</strong> did Charles Perkins want to see? What actions was he calling for?</span></div>
+<textarea id="fr3" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">4</span><span>According to Perkins, what was the <strong>purpose</strong> of the Freedom Ride through rural NSW?</span></div>
+<textarea id="fr4" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">5</span><span>What does Perkins mean by Aboriginal people being '<strong>second class</strong>'?</span></div>
+<textarea id="fr5" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">6</span><span>What do you think <strong>living conditions</strong> were like in Aboriginal fringe settlements?</span></div>
+<textarea id="fr6" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num">7</span><span>Charles Perkins says the '<strong>timing was right</strong>'. What do you think he means?</span></div>
+<textarea id="fr7" placeholder="Write your answer here…"></textarea></div></div><h2 class="sec-head" style="border-color:#b5651d">The Freedom Rides Cloze Passage</h2><p>Study the cloze passage and word bank from your booklet, then fill in your answers below:</p><img class="page-img" src="images/page-15.jpg" alt="Booklet page 15" loading="lazy"><img class="page-img" src="images/page-16.jpg" alt="Booklet page 16" loading="lazy"><div class="q-section"><h3>Cloze Passage — Fill in the Blanks</h3><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:0.6rem;margin-top:0.75rem"><div><div class="col-label" style="font-size:0.7rem">1. Group name (SAFA — full name)</div><textarea id="cl1" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">2. Elected leader</div><textarea id="cl2" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">3. His background/descent</div><textarea id="cl3" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">4. Type of discrimination</div><textarea id="cl4" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">5. Who hired the bus</div><textarea id="cl5" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">6. Name of the ride/trip</div><textarea id="cl6" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">7. What they surveyed locals about</div><textarea id="cl7" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">8. Type of protest used</div><textarea id="cl8" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">9. What was picketed in Moree</div><textarea id="cl9" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">10. Where Aboriginal people sat separately</div><textarea id="cl10" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">11. What Aboriginal people were from shops</div><textarea id="cl11" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">12. What these restrictions are called</div><textarea id="cl12" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">13. How opposition became</div><textarea id="cl13" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">14. Media type 1</div><textarea id="cl14" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">15. Media type 2</div><textarea id="cl15" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">16. What Perkins could say at the end</div><textarea id="cl16" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">17. What Australians voted at</div><textarea id="cl17" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">18. How Australians voted</div><textarea id="cl18" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">19. What the referendum supported</div><textarea id="cl19" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">20. What Aboriginal people were counted in</div><textarea id="cl20" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div><div><div class="col-label" style="font-size:0.7rem">21. Government's new power</div><textarea id="cl21" style="min-height:52px;font-size:0.86rem" placeholder="Fill in…"></textarea></div></div></div><h2 class="sec-head" style="border-color:#b5651d">The Freedom Rides Comparison</h2><p>Study the information about Freedom Rides in America from your booklet, then complete the Venn Diagram below:</p><img class="page-img" src="images/page-17.jpg" alt="Booklet page 17" loading="lazy"><div class="q-section"><h3>Venn Diagram — Australia vs America</h3><div class="three-col"><div><div class="col-label">🇦🇺 Australia Only</div><textarea id="venn_a" class="lg" placeholder="What was unique to Australia?&#10;e.g. Charles Perkins, SAFA, 1967 Referendum…"></textarea></div><div><div class="col-label">🌐 Both</div><textarea id="venn_b" class="lg" placeholder="What did both share?&#10;e.g. protesting segregation, using buses, media coverage…"></textarea></div><div><div class="col-label">🇺🇸 America Only</div><textarea id="venn_u" class="lg" placeholder="What was unique to America?&#10;e.g. bus bombing, federal marshals, CORE…"></textarea></div></div></div><h2 class="sec-head" style="border-color:#b5651d">The Wave Hill Walk-Off</h2><p>Study the Wave Hill Walk-Off information and lyric study from your booklet:</p><img class="page-img" src="images/page-18.jpg" alt="Booklet page 18" loading="lazy"><div class="vid-section">
+<div class="vid-label">📹 Watch</div>
+<div class="vid-title">From Little Things, Big Things Grow — The Wave Hill Walk-Off</div>
+<video class="vid-player" controls preload="none">
+  <source src="5__From_Little_Things.mp4" type="video/mp4">
+  Your browser does not support video.
+</video></div><img class="page-img" src="images/page-19.jpg" alt="Booklet page 19" loading="lazy"><div class="q-section"><h3>Lyric Study — From Little Things, Big Things Grow</h3><div class="two-col"><div><div class="col-label">Who was involved?</div><textarea id="ly1" placeholder="Name the key people and their roles…"></textarea></div><div><div class="col-label">What caused the issue?</div><textarea id="ly2" placeholder="Why did the Gurindji people walk off?"></textarea></div><div><div class="col-label">What was tried to resolve it?</div><textarea id="ly3" placeholder="What offers or attempts at resolution were made?"></textarea></div><div><div class="col-label">What was the resolution?</div><textarea id="ly4" placeholder="How was the conflict eventually resolved?"></textarea></div></div><div class="q-item" style="margin-top:1rem"><div class="q-label">Why is this event important in Australian history?</div><textarea id="ly5" class="lg" placeholder="Write your answer here…"></textarea></div></div><div class="reflect"><h3>🪞 Lesson Reflection</h3><div class="q-item"><div class="q-label">What was the most significant moment or action you learned about, and why?</div><textarea id="ref1" placeholder="Write your reflection here…"></textarea></div><div class="q-item"><div class="q-label">Paul Kelly's song shows the power of persistence. Can you connect 'from little things big things grow' to something happening in the world today?</div><textarea id="ref2" placeholder="Write your reflection here…"></textarea></div><div class="q-item"><div class="q-label">The Freedom Riders were mostly young university students. What does this tell us about who can make a difference?</div><textarea id="ref3" placeholder="Write your reflection here…"></textarea></div></div><div class="nav-links"><a href="lesson1.html">← Previous Lesson</a><a href="lesson3.html">Next Lesson →</a></div></div><div class="save-bar">
+<p>Save your answers and submit to your teacher.</p>
+<button class="btn-save" onclick="doSave()">💾 Download Answers as Word Doc</button>
+</div>
+<script>
+function doSave(){
+  const name=(document.getElementById('sName')||{value:'Student'}).value||'Student';
+  let html=`<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='UTF-8'><style>body{font-family:Calibri,sans-serif;font-size:11pt;line-height:1.6;margin:2cm}h1{font-size:16pt;border-bottom:2pt solid #c0392b;padding-bottom:5pt}.meta{color:#666;font-size:9pt;margin-bottom:14pt}</style></head><body><h1>Lesson 2 Freedom Rides and Wave Hill Walk-Off</h1><p class='meta'>Student: ${name} | Seaford Secondary College</p>`;
+  html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Freedom Rides Questions</h2>';
+{const v=(document.getElementById('fr1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q1: How did the public feel about Aboriginal peoples?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('fr2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q2: How much did most Australians know?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('fr3')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q3: What changes did Perkins want?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('fr4')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q4: Purpose of the Freedom Ride through NSW</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('fr5')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q5: What does 'second class' mean?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('fr6')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q6: Living conditions in Aboriginal fringe settlements</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('fr7')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Q7: What did 'timing was right' mean?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Cloze Passage</h2>';
+{const v=(document.getElementById('cl1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 1: 1. Group name (SAFA — full name)</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 2: 2. Elected leader</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl3')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 3: 3. His background/descent</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl4')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 4: 4. Type of discrimination</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl5')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 5: 5. Who hired the bus</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl6')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 6: 6. Name of the ride/trip</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl7')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 7: 7. What they surveyed locals about</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl8')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 8: 8. Type of protest used</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl9')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 9: 9. What was picketed in Moree</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl10')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 10: 10. Where Aboriginal people sat separately</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl11')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 11: 11. What Aboriginal people were from shops</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl12')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 12: 12. What these restrictions are called</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl13')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 13: 13. How opposition became</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl14')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 14: 14. Media type 1</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl15')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 15: 15. Media type 2</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl16')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 16: 16. What Perkins could say at the end</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl17')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 17: 17. What Australians voted at</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl18')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 18: 18. How Australians voted</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl19')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 19: 19. What the referendum supported</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl20')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 20: 20. What Aboriginal people were counted in</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('cl21')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Cloze blank 21: 21. Government's new power</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Freedom Rides Comparison</h2>';
+{const v=(document.getElementById('venn_a')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Venn Diagram — Australia Only</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('venn_b')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Venn Diagram — Both</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('venn_u')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Venn Diagram — America Only</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Wave Hill Walk-Off Lyric Study</h2>';
+{const v=(document.getElementById('ly1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Lyric Study — Who was involved?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ly2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Lyric Study — What caused the issue?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ly3')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Lyric Study — What was tried to resolve it?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ly4')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Lyric Study — What was the resolution?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ly5')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Lyric Study — Why is this event important?</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+html+='<h2 style="font-size:13pt;margin-top:18pt;border-bottom:1pt solid #ccc;padding-bottom:3pt">Lesson Reflection</h2>';
+{const v=(document.getElementById('ref1')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Reflection: Most significant moment</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ref2')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Reflection: Power of persistence</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+{const v=(document.getElementById('ref3')||{value:''}).value||'(No answer)';
+html+='<p style="font-weight:bold;margin-top:10pt;font-size:10.5pt">Reflection: Young people making a difference</p><div style="border:1pt solid #ccc;padding:6pt;min-height:40pt;white-space:pre-wrap;background:#fffef9;font-size:10.5pt">'+v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';}
+
+  html+='</body></html>';
+  const b=new Blob(['\ufeff',html],{type:'application/msword'});
+  const u=URL.createObjectURL(b);
+  const a=document.createElement('a');
+  a.href=u;a.download=`Lesson_2_Freedom_Rides_and_Wave_Hill_Walk-Off_${name.replace(/\s+/g,'_')}.doc`;
+  a.click();URL.revokeObjectURL(u);
+}
+</script><script>
+["fr1", "fr2", "fr3", "fr4", "fr5", "fr6", "fr7", "cl1", "cl2", "cl3", "cl4", "cl5", "cl6", "cl7", "cl8", "cl9", "cl10", "cl11", "cl12", "cl13", "cl14", "cl15", "cl16", "cl17", "cl18", "cl19", "cl20", "cl21", "venn_a", "venn_b", "venn_u", "ly1", "ly2", "ly3", "ly4", "ly5", "ref1", "ref2", "ref3", "sName"].forEach(id=>{
+  const el=document.getElementById(id);
+  if(!el)return;
+  const s=localStorage.getItem('L2_'+id);
+  if(s)el.value=s;
+  el.addEventListener('input',()=>localStorage.setItem('L2_'+id,el.value));
+});
+</script></body></html>
