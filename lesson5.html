@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 5 – The Apology & Contemporary Issues</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>:root{--accent-color:#6b4c8a;}:root {
+  --black: #1a1008; --red: #c0392b; --yellow: #e8b84b; --ochre: #b5651d;
+  --cream: #fdf6e3; --warm-grey: #e8dcc8; --bg: #f5ede0; --text: #2a1f10;
+  --muted: #7a6550; --border: #d4c4a8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Source Serif 4',Georgia,serif; font-size:1rem; line-height:1.75; }
+.topbar { background:var(--black); color:var(--cream); padding:0.6rem 2rem; display:flex; align-items:center; justify-content:space-between; font-size:0.82rem; }
+.topbar a { color:var(--yellow); text-decoration:none; }
+.topbar a:hover { text-decoration:underline; }
+.hero { background:var(--black); color:var(--cream); padding:2.5rem 2rem 2rem; position:relative; }
+.hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:5px; background:linear-gradient(90deg,var(--black),var(--red),var(--yellow)); }
+.hero-inner { max-width:860px; margin:0 auto; }
+.lesson-label { font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.4rem; }
+.hero h1 { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,4.5vw,2.8rem); font-weight:900; line-height:1.15; }
+.content { max-width:860px; margin:0 auto; padding:0 1.5rem 5rem; }
+/* Hook */
+.hook-box { background:linear-gradient(135deg,#1f1208,#2d1a0a); border:1px solid rgba(232,184,75,0.35); border-radius:10px; padding:1.5rem 1.75rem; margin:2rem 0 1.5rem; color:var(--cream); }
+.hook-label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.6rem; }
+.hook-box p { font-size:1.05rem; font-style:italic; color:var(--warm-grey); line-height:1.7; }
+/* Learning intention */
+.li-box { background:white; border-left:4px solid var(--accent-color,var(--red)); border-radius:0 8px 8px 0; padding:1.1rem 1.4rem; margin:1.5rem 0; box-shadow:0 2px 10px rgba(0,0,0,0.06); }
+.li-box .li-label { font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent-color,var(--red)); margin-bottom:0.4rem; font-weight:700; }
+.li-box p { font-size:0.93rem; }
+/* Warning */
+.warn { background:#fff7f7; border:1px solid rgba(192,57,43,0.3); border-radius:8px; padding:0.9rem 1.2rem; font-size:0.84rem; color:#8a2020; margin:1.25rem 0; line-height:1.65; }
+/* Student name */
+.name-row { background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.4rem; margin:1.25rem 0; display:flex; align-items:center; gap:1rem; }
+.name-row label { font-weight:600; font-size:0.9rem; white-space:nowrap; }
+.name-row input { flex:1; padding:0.45rem 0.7rem; border:1px solid var(--border); border-radius:4px; font-family:'Source Serif 4',Georgia,serif; font-size:0.95rem; color:var(--text); }
+/* Section headings */
+.sec-head { font-family:'Playfair Display',serif; font-size:1.55rem; font-weight:800; color:var(--black); border-bottom:3px solid var(--accent-color,var(--red)); padding-bottom:0.35rem; margin:2.5rem 0 1rem; }
+.sub-head { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--accent-color,var(--ochre)); margin:1.5rem 0 0.5rem; }
+p { margin-bottom:0.7rem; }
+ul,ol { padding-left:1.6rem; margin-bottom:0.75rem; }
+li { margin-bottom:0.3rem; }
+/* Booklet page images */
+.page-img { width:100%; border:1px solid var(--border); border-radius:8px; box-shadow:0 3px 16px rgba(0,0,0,0.12); margin:1.25rem 0; display:block; }
+.page-img-half { width:100%; border:1px solid var(--border); border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1); display:block; }
+.img-2col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.25rem 0; }
+.img-3col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; margin:1.25rem 0; }
+@media(max-width:600px) { .img-2col,.img-3col { grid-template-columns:1fr; } }
+/* Quote */
+.quote { border-left:4px solid var(--accent-color,var(--red)); background:rgba(192,57,43,0.05); padding:0.9rem 1.4rem; margin:1.1rem 0; border-radius:0 8px 8px 0; font-style:italic; color:#3a1a0a; }
+.quote cite { display:block; font-size:0.8rem; font-style:normal; margin-top:0.4rem; color:var(--muted); }
+/* Vocab */
+.vocab-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:0.6rem; margin:1rem 0; }
+.voc { background:white; border:1px solid var(--border); border-radius:6px; padding:0.65rem 0.9rem; font-size:0.86rem; }
+.voc strong { display:block; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--accent-color,var(--red)); margin-bottom:0.15rem; }
+/* Info box */
+.info { background:#fffbf2; border-left:3px solid var(--yellow); border-radius:0 8px 8px 0; padding:1rem 1.3rem; margin:1rem 0; font-size:0.93rem; }
+/* Video */
+.vid-section { background:var(--black); border-radius:12px; padding:1.4rem; margin:1.75rem 0; color:var(--cream); }
+.vid-label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--yellow); margin-bottom:0.4rem; }
+.vid-title { font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:0.7rem; }
+.vid-player { width:100%; border-radius:8px; display:block; background:#000; max-height:480px; }
+.vid-note { font-size:0.76rem; color:#9a8878; margin-top:0.5rem; }
+/* Q sections */
+.q-section { background:white; border:1px solid var(--border); border-radius:12px; padding:1.6rem 1.75rem; margin:2rem 0; box-shadow:0 2px 14px rgba(0,0,0,0.06); }
+.q-section h3 { font-family:'Playfair Display',serif; font-size:1.2rem; border-bottom:2px solid var(--yellow); padding-bottom:0.45rem; margin-bottom:1.2rem; }
+.q-item { margin-bottom:1.6rem; }
+.q-label { font-weight:600; font-size:0.93rem; margin-bottom:0.4rem; display:flex; gap:0.5rem; align-items:flex-start; }
+.q-num { background:var(--accent-color,var(--red)); color:white; border-radius:50%; width:1.55rem; height:1.55rem; min-width:1.55rem; display:flex; align-items:center; justify-content:center; font-size:0.78rem; font-weight:700; margin-top:0.05rem; }
+textarea { width:100%; min-height:96px; padding:0.7rem 0.95rem; border:1px solid var(--border); border-radius:6px; font-family:'Source Serif 4',Georgia,serif; font-size:0.9rem; color:var(--text); background:#fffef9; resize:vertical; line-height:1.65; transition:border-color 0.2s,box-shadow 0.2s; }
+textarea:focus { outline:none; border-color:var(--accent-color,var(--red)); box-shadow:0 0 0 3px rgba(192,57,43,0.08); }
+textarea.lg { min-height:160px; }
+textarea.xl { min-height:240px; }
+/* Two col answers */
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; }
+@media(max-width:600px) { .two-col,.three-col { grid-template-columns:1fr; } }
+.col-label { font-size:0.76rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); margin-bottom:0.35rem; font-weight:700; }
+/* Reflection */
+.reflect { background:linear-gradient(135deg,#1a1008,#2e1a0a); border-radius:12px; padding:1.75rem 2rem; margin:2.5rem 0; color:var(--cream); }
+.reflect h3 { font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--yellow); margin-bottom:1rem; }
+.reflect .q-label { color:var(--warm-grey); }
+.reflect textarea { background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.18); color:var(--cream); }
+.reflect textarea:focus { border-color:var(--yellow); box-shadow:0 0 0 3px rgba(232,184,75,0.12); }
+/* Save bar */
+.save-bar { position:sticky; bottom:0; background:var(--black); padding:0.85rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; z-index:100; box-shadow:0 -4px 20px rgba(0,0,0,0.35); flex-wrap:wrap; }
+.save-bar p { font-size:0.78rem; color:var(--warm-grey); margin:0; }
+.btn-save { background:var(--yellow); color:var(--black); border:none; padding:0.65rem 1.6rem; border-radius:6px; font-family:'Source Serif 4',serif; font-size:0.88rem; font-weight:700; cursor:pointer; transition:background 0.18s; letter-spacing:0.02em; }
+.btn-save:hover { background:#f5cb55; }
+/* Nav */
+.nav-links { display:flex; justify-content:space-between; margin:2rem 0 0.5rem; }
+.nav-links a { color:var(--accent-color,var(--red)); text-decoration:none; font-size:0.88rem; }
+.nav-links a:hover { text-decoration:underline; }
+/* Table */
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:0.86rem; }
+th { background:var(--black); color:var(--cream); padding:0.55rem 0.85rem; text-align:left; }
+td { padding:0.45rem 0.85rem; border:1px solid var(--border); }
+tr:nth-child(even) td { background:#f5ece0; }
+</style>
+</head><body><div class="topbar"><span>Indigenous Australians Civil Rights Movement</span><div style="display:flex;gap:1.5rem"><a href="lesson4.html">← Back</a></div></div><div class="hero"><div class="hero-inner">
+<div class="lesson-label">Lesson 5 of 5 — Final Lesson</div>
+<h1>The Apology &amp; Contemporary Issues</h1>
+</div></div><div class="content"><div class="hook-box"><div class="hook-label">💭 Thinking Question</div><p>If someone had hurt you deeply and many years later said 'sorry,' what would that mean to you? Would a sorry be enough? What would need to happen after the apology for it to be truly meaningful?</p></div><div class="li-box" style="--accent-color:#6b4c8a"><div class="li-label">🎯 Learning Intention</div><p>By the end of this lesson I can analyse repetition and emotive language in the National Apology, evaluate whether the Apology has been followed by meaningful action, examine the 2023 Voice Referendum, and assess progress on Closing the Gap targets.</p></div><div class="warn">⚠️ <strong>Warning:</strong> This lesson contains historical references to harm done to First Nations peoples. Please engage with care and respect.</div><div class="name-row"><label for="sName">Student Name:</label><input type="text" id="sName" placeholder="Type your full name…"></div><h2 class="sec-head" style="border-color:#6b4c8a">The National Apology to the Stolen Generations</h2><img class="page-img" src="page-26.jpg" alt="Booklet page 26" loading="lazy"><div class="vid-section">
+<div class="vid-label">📹 Watch</div>
+<div class="vid-title">The National Apology — Prime Minister Kevin Rudd, 13 February 2008</div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin-top:0.5rem">
+<iframe src="https://www.youtube.com/embed/13K3QpHWsCM"
+  style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
+  allowfullscreen loading="lazy" title="The National Apology — Prime Minister Kevin Rudd, 13 February 2008"></iframe>
+</div><p class="vid-note">⚠️ As you watch, note any words or phrases that are REPEATED and any particularly emotive words.</p></div><h2 class="sec-head" style="border-color:#6b4c8a">The Apology Transcript &amp; Response</h2><img class="page-img" src="page-27.jpg" alt="Booklet page 27" loading="lazy"><div class="img-2col"><img class="page-img-half" src="page-28.jpg" alt="Booklet page 28" loading="lazy"><img class="page-img-half" src="page-29.jpg" alt="Booklet page 29" loading="lazy"></div><div class="q-section"><h3>The Apology — Repetition &amp; Emotive Language</h3><div class="q-item"><div class="q-label"><span class="q-num" style="background:#6b4c8a">1</span><span>Write down words/phrases that are <strong>repeated</strong>. Then explain why Rudd chose to repeat them.</span></div><div class="two-col"><div><div class="col-label">Repeated words/phrases I noticed:</div><textarea id="rep1" placeholder="Write your answer here…"></textarea></div><div><div class="col-label">Why he repeated them (effect on audience):</div><textarea id="rep2" placeholder="Write your answer here…"></textarea></div></div></div><div class="q-item"><div class="q-label"><span class="q-num" style="background:#6b4c8a">2</span><span>Identify at least <strong>three emotive words or phrases</strong> and explain the emotional response each creates:</span></div><div class="three-col"><div><div class="col-label">Emotive word/phrase 1 + effect:</div><textarea id="em1" placeholder="Write your answer here…"></textarea></div><div><div class="col-label">Emotive word/phrase 2 + effect:</div><textarea id="em2" placeholder="Write your answer here…"></textarea></div><div><div class="col-label">Emotive word/phrase 3 + effect:</div><textarea id="em3" placeholder="Write your answer here…"></textarea></div></div></div><div class="q-item"><div class="q-label"><span class="q-num" style="background:#6b4c8a">3</span><span>Tom Calma said: <em>"This is not about black armbands and guilt. It never was. It is about belonging."</em> What do you think he means?</span></div>
+<textarea id="calma" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num" style="background:#6b4c8a">4</span><span>How do you think people felt when they first heard the words 'we say sorry' spoken by a Prime Minister?</span></div>
+<textarea id="crowd" class="lg" placeholder="Write your answer here…"></textarea></div></div><h2 class="sec-head" style="border-color:#6b4c8a">Turning Words Into Actions</h2><img class="page-img" src="page-30.jpg" alt="Booklet page 30" loading="lazy"><div class="q-section"><h3>The Apology Reflection</h3><p style="font-size:0.88rem;color:var(--muted);margin-bottom:1rem">Think of three actions for each column below:</p><div class="three-col" style="margin-bottom:1.5rem"><div><div style="background:var(--black);color:var(--cream);padding:0.5rem;border-radius:6px 6px 0 0;font-size:0.82rem;text-align:center;font-weight:600">Me — Personal Actions</div><textarea id="act_me" class="lg" style="border-radius:0 0 6px 6px;border-top:none" placeholder="Three things I could do personally…"></textarea></div><div><div style="background:var(--black);color:var(--cream);padding:0.5rem;border-radius:6px 6px 0 0;font-size:0.82rem;text-align:center;font-weight:600">My School</div><textarea id="act_sc" class="lg" style="border-radius:0 0 6px 6px;border-top:none" placeholder="Three things our school could do…"></textarea></div><div><div style="background:var(--black);color:var(--cream);padding:0.5rem;border-radius:6px 6px 0 0;font-size:0.82rem;text-align:center;font-weight:600">The Government</div><textarea id="act_gv" class="lg" style="border-radius:0 0 6px 6px;border-top:none" placeholder="Three things the government could do…"></textarea></div></div><div class="q-item"><div class="q-label">Write a letter to the school Principal (Mr Stassinopoulos) outlining practical actions to acknowledge the past and embrace the future:</div><div style="background:#fffbf2;border:1px solid var(--border);border-radius:8px;padding:1.25rem;margin-top:0.5rem"><p style="font-weight:600;margin-bottom:0.5rem">Dear Mr Stassinopoulos,</p><textarea id="letter" class="xl" placeholder="Write your letter here…"></textarea></div></div></div><h2 class="sec-head" style="border-color:#6b4c8a">Contemporary Issues</h2><img class="page-img" src="page-31.jpg" alt="Booklet page 31" loading="lazy"><h2 class="sec-head" style="border-color:#6b4c8a">Closing the Gap Analysis</h2><img class="page-img" src="page-32.jpg" alt="Booklet page 32" loading="lazy"><div class="img-2col"><img class="page-img-half" src="page-33.jpg" alt="Booklet page 33" loading="lazy"><img class="page-img-half" src="page-34.jpg" alt="Booklet page 34" loading="lazy"></div><div class="q-section"><h3>Closing the Gap Data Table &amp; Questions</h3><table><thead><tr><th>Outcome</th><th>Indigenous Population</th><th>Australian Population</th></tr></thead><tbody><tr><td style="font-style:italic">Male Life Expectancy</td><td><input id="gi_mle" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_mle" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Female Life Expectancy</td><td><input id="gi_fle" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_fle" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Healthy Birth Weight</td><td><input id="gi_hbw" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_hbw" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Enrolled in Pre-School</td><td><input id="gi_pre" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_pre" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Adults in Prison (per 100,000)</td><td><input id="gi_pris" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_pris" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Young People in Detention (per 10,000)</td><td><input id="gi_det" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_det" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Children Out of Home Care (per 1,000)</td><td><input id="gi_ohc" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_ohc" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">People Who Took Own Life (per 100,000)</td><td><input id="gi_sui" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_sui" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Students Developmentally on Track</td><td><input id="gi_dev" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_dev" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Year 12 or Equivalent</td><td><input id="gi_y12" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_y12" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Tertiary Qualification</td><td><input id="gi_tert" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_tert" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">15-24 Employed/Education</td><td><input id="gi_emp1" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_emp1" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Adults Employed</td><td><input id="gi_emp2" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_emp2" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr><tr><td style="font-style:italic">Appropriate Sized Housing</td><td><input id="gi_hse" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td><td><input id="ga_hse" style="width:100%;padding:0.3rem 0.5rem;border:1px solid var(--border);border-radius:4px;font-size:0.86rem" placeholder=""></td></tr></tbody></table><div class="q-item"><div class="q-label"><span class="q-num" style="background:#6b4c8a">1</span><span>In which areas is the gap <strong>largest</strong>? What does this tell us about the long-term effects of policies studied in this unit?</span></div>
+<textarea id="gap1" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num" style="background:#6b4c8a">2</span><span>The Apology was delivered in 2008. How would you evaluate the <strong>progress</strong> made since then?</span></div>
+<textarea id="gap2" class="lg" placeholder="Write your answer here…"></textarea></div><div class="q-item"><div class="q-label"><span class="q-num" style="background:#6b4c8a">3</span><span>The 2023 Voice Referendum was rejected by 60% of voters. What does this result mean for the relationship between Indigenous and non-Indigenous Australians?</span></div>
+<textarea id="gap3" class="lg" placeholder="Write your answer here…"></textarea></div></div><div class="reflect"><h3>🪞 Lesson Reflection</h3><div class="q-item"><div class="q-label">Looking back at everything — from the White Australia Policy to Closing the Gap — has the civil rights movement succeeded?</div><textarea id="ref1" placeholder="Write your reflection here…"></textarea></div><div class="q-item"><div class="q-label">What is the single most important thing this unit has taught you? Why does it matter to you personally?</div><textarea id="ref2" placeholder="Write your reflection here…"></textarea></div><div class="q-item"><div class="q-label">The Apology said 'the injustices of the past must never, never happen again.' What needs to happen to keep that promise?</div><textarea id="ref3" placeholder="Write your reflection here…"></textarea></div></div><div style="background:linear-gradient(135deg,#2e7d32,#1b5e20);color:white;border-radius:12px;padding:1.75rem 2rem;text-align:center;margin:2rem 0"><h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:0.6rem">🎉 You've Completed the Unit!</h3><p style="opacity:0.9;line-height:1.7;font-size:0.92rem">Thank you for engaging with this history with care and respect. Download your answers and submit to your teacher.</p></div><div style="background:white;border:2px solid #e8b84b;border-radius:12px;padding:2rem;text-align:center;margin:2.5rem 0;box-shadow:0 2px 16px rgba(0,0,0,0.08)">
+  <p style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.5rem">Finished? Save your answers!</p>
+  <p style="font-size:0.9rem;color:#7a6550;margin-bottom:1.25rem">Click below to download your answers as a Word document and submit to your teacher.</p>
+  <button onclick="doSave()" style="background:#e8b84b;color:#1a1008;border:none;padding:0.85rem 2.5rem;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;">
+    💾 Download Answers as Word Doc
+  </button>
+</div><div class="nav-links"><a href="lesson4.html">← Previous Lesson</a><a href="index.html">← All Lessons</a></div></div><script>
+function doSave() {
+  const nameEl = document.getElementById('sName');
+  const name = nameEl ? nameEl.value || 'Student' : 'Student';
+  let gT = '<h2>Closing the Gap Data</h2><table style="border-collapse:collapse;width:100%"><tr><th style="background:#1a1008;color:white;padding:5pt 8pt;text-align:left">Outcome</th><th style="background:#1a1008;color:white;padding:5pt 8pt">Indigenous</th><th style="background:#1a1008;color:white;padding:5pt 8pt">Australian</th></tr>';
+  {const iv=(document.getElementById('gi_mle')||{value:'—'}).value||'—';const av=(document.getElementById('ga_mle')||{value:'—'}).value||'—';gT+='<tr><td>Male Life Expectancy</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_fle')||{value:'—'}).value||'—';const av=(document.getElementById('ga_fle')||{value:'—'}).value||'—';gT+='<tr><td>Female Life Expectancy</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_hbw')||{value:'—'}).value||'—';const av=(document.getElementById('ga_hbw')||{value:'—'}).value||'—';gT+='<tr><td>Healthy Birth Weight</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_pre')||{value:'—'}).value||'—';const av=(document.getElementById('ga_pre')||{value:'—'}).value||'—';gT+='<tr><td>Enrolled in Pre-School</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_pris')||{value:'—'}).value||'—';const av=(document.getElementById('ga_pris')||{value:'—'}).value||'—';gT+='<tr><td>Adults in Prison (per 100,000)</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_det')||{value:'—'}).value||'—';const av=(document.getElementById('ga_det')||{value:'—'}).value||'—';gT+='<tr><td>Young People in Detention (per 10,000)</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_ohc')||{value:'—'}).value||'—';const av=(document.getElementById('ga_ohc')||{value:'—'}).value||'—';gT+='<tr><td>Children Out of Home Care (per 1,000)</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_sui')||{value:'—'}).value||'—';const av=(document.getElementById('ga_sui')||{value:'—'}).value||'—';gT+='<tr><td>People Who Took Own Life (per 100,000)</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_dev')||{value:'—'}).value||'—';const av=(document.getElementById('ga_dev')||{value:'—'}).value||'—';gT+='<tr><td>Students Developmentally on Track</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_y12')||{value:'—'}).value||'—';const av=(document.getElementById('ga_y12')||{value:'—'}).value||'—';gT+='<tr><td>Year 12 or Equivalent</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_tert')||{value:'—'}).value||'—';const av=(document.getElementById('ga_tert')||{value:'—'}).value||'—';gT+='<tr><td>Tertiary Qualification</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_emp1')||{value:'—'}).value||'—';const av=(document.getElementById('ga_emp1')||{value:'—'}).value||'—';gT+='<tr><td>15-24 Employed/Education</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_emp2')||{value:'—'}).value||'—';const av=(document.getElementById('ga_emp2')||{value:'—'}).value||'—';gT+='<tr><td>Adults Employed</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  {const iv=(document.getElementById('gi_hse')||{value:'—'}).value||'—';const av=(document.getElementById('ga_hse')||{value:'—'}).value||'—';gT+='<tr><td>Appropriate Sized Housing</td><td>'+iv+'</td><td>'+av+'</td></tr>';}
+  gT += '</table>';
+  let html = '<html><head><meta charset="UTF-8"><style>body{font-family:Calibri,sans-serif;font-size:11pt;line-height:1.6;margin:2cm}h1{font-size:16pt;color:#1a1008;border-bottom:2pt solid #6b4c8a;padding-bottom:5pt;margin-bottom:4pt}.meta{color:#888;font-size:9pt;margin-bottom:16pt}td{border:1pt solid #ccc;padding:4pt 8pt}</style></head><body>';
+  html += '<h1>Lesson 5: The Apology and Contemporary Issues</h1>';
+  html += '<p class="meta">Student: ' + name + ' | Seaford Secondary College</p>';
+  html += gT;
+  {
+    const el = document.getElementById('rep1');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Repeated words/phrases in the Apology</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('rep2');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Why Rudd repeated these</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('em1');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Emotive word/phrase 1 and effect</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('em2');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Emotive word/phrase 2 and effect</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('em3');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Emotive word/phrase 3 and effect</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('calma');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Tom Calma: It is about belonging</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('crowd');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">How the crowd felt hearing we say sorry</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('act_me');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Personal actions</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('act_sc');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">School actions</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('act_gv');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Government actions</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('letter');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Letter to Principal Mr Stassinopoulos</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('gap1');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Closing the Gap Q1: Largest gaps</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('gap2');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Closing the Gap Q2: Progress since the Apology</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('gap3');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Closing the Gap Q3: What the 2023 No vote means</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('ref1');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Final Reflection: Has the civil rights movement succeeded?</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('ref2');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Final Reflection: Most important thing learned</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  {
+    const el = document.getElementById('ref3');
+    const val = el ? el.value : '';
+    if(val) {
+      html += '<p style="font-weight:bold;margin-top:12pt;font-size:10.5pt;color:#333">Final Reflection: Keeping the promise of the Apology</p>';
+      html += '<div style="border:1pt solid #ccc;padding:8pt;margin-bottom:6pt;white-space:pre-wrap;font-size:10.5pt;min-height:30pt;background:#fffef9">' + val.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
+    }
+  }
+  html += '</body></html>';
+  try {
+    const blob = new Blob(['\ufeff' + html], {type: 'application/msword'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Lesson5_Apology_' + name.replace(/\s+/g,'_') + '.doc';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch(e) { alert('Download failed: ' + e.message); }
+}
+</script><script>
+["rep1", "rep2", "em1", "em2", "em3", "calma", "crowd", "act_me", "act_sc", "act_gv", "letter", "gap1", "gap2", "gap3", "ref1", "ref2", "ref3", "gi_mle", "gi_fle", "gi_hbw", "gi_pre", "gi_pris", "gi_det", "gi_ohc", "gi_sui", "gi_dev", "gi_y12", "gi_tert", "gi_emp1", "gi_emp2", "gi_hse", "ga_mle", "ga_fle", "ga_hbw", "ga_pre", "ga_pris", "ga_det", "ga_ohc", "ga_sui", "ga_dev", "ga_y12", "ga_tert", "ga_emp1", "ga_emp2", "ga_hse", "sName"].forEach(id=>{
+  const el=document.getElementById(id);
+  if(!el)return;
+  const s=localStorage.getItem('L5_'+id);
+  if(s)el.value=s;
+  el.addEventListener('input',()=>localStorage.setItem('L5_'+id,el.value));
+});
+</script></body></html>

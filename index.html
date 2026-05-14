@@ -6,286 +6,47 @@
 <title>Indigenous Australians Civil Rights Movement</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --black: #1a1008;
-    --red: #c0392b;
-    --yellow: #e8b84b;
-    --ochre: #b5651d;
-    --cream: #fdf6e3;
-    --warm-grey: #e8dcc8;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: var(--black);
-    color: var(--cream);
-    font-family: 'Source Serif 4', Georgia, serif;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
-  /* Animated background stripes */
-  .bg-stripes {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: 0;
-    overflow: hidden;
-    pointer-events: none;
-  }
-  .stripe {
-    position: absolute;
-    width: 200%;
-    height: 4px;
-    opacity: 0.08;
-  }
-  .stripe-black { background: #111; top: 20%; transform: rotate(-2deg); }
-  .stripe-red { background: var(--red); top: 40%; transform: rotate(-2deg); height: 6px; opacity: 0.12; }
-  .stripe-yellow { background: var(--yellow); top: 60%; transform: rotate(-2deg); opacity: 0.1; }
-
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 2rem 4rem;
-  }
-
-  /* Header */
-  header {
-    padding: 3rem 0 2rem;
-    border-bottom: 3px solid var(--red);
-  }
-
-  .flag-bar {
-    display: flex;
-    height: 10px;
-    margin-bottom: 2rem;
-    border-radius: 2px;
-    overflow: hidden;
-  }
-  .flag-bar div { flex: 1; }
-  .fb-black { background: #1a1008; border: 1px solid #444; }
-  .fb-red { background: var(--red); }
-  .fb-yellow { background: var(--yellow); }
-
-  h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 6vw, 3.8rem);
-    font-weight: 900;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--cream);
-    margin-bottom: 0.5rem;
-  }
-
-  h1 span {
-    color: var(--yellow);
-    display: block;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--warm-grey);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-top: 0.75rem;
-  }
-
-  /* Acknowledgement */
-  .acknowledgement {
-    background: linear-gradient(135deg, rgba(192,57,43,0.15), rgba(232,184,75,0.08));
-    border-left: 4px solid var(--yellow);
-    border-radius: 0 8px 8px 0;
-    padding: 2rem 2rem 2rem 2.5rem;
-    margin: 2.5rem 0;
-  }
-
-  .acknowledgement h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    color: var(--yellow);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-
-  .acknowledgement p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: var(--warm-grey);
-    font-style: italic;
-    font-weight: 300;
-  }
-
-  /* Warning */
-  .warning {
-    background: rgba(192,57,43,0.12);
-    border: 1px solid rgba(192,57,43,0.4);
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
-    margin-bottom: 2.5rem;
-    font-size: 0.85rem;
-    color: #e8a090;
-    line-height: 1.6;
-  }
-
-  .warning strong { color: var(--red); }
-
-  /* Lessons */
-  .lessons-heading {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: var(--cream);
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(232,184,75,0.3);
-    padding-bottom: 0.75rem;
-  }
-
-  .lessons-intro {
-    font-size: 0.9rem;
-    color: var(--warm-grey);
-    margin-bottom: 2rem;
-    font-weight: 300;
-  }
-
-  .lessons-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  .lesson-card {
-    display: block;
-    text-decoration: none;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
-    padding: 1.75rem 2rem;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .lesson-card::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 4px;
-    transition: width 0.3s ease;
-  }
-
-  .lesson-card:nth-child(1)::before { background: var(--red); }
-  .lesson-card:nth-child(2)::before { background: var(--yellow); }
-  .lesson-card:nth-child(3)::before { background: var(--ochre); }
-  .lesson-card:nth-child(4)::before { background: #8fbc8f; }
-
-  .lesson-card:hover {
-    background: rgba(255,255,255,0.06);
-    border-color: rgba(255,255,255,0.18);
-    transform: translateX(6px);
-  }
-
-  .lesson-card:hover::before { width: 6px; }
-
-  .lesson-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--warm-grey);
-    margin-bottom: 0.4rem;
-  }
-
-  .lesson-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--cream);
-    margin-bottom: 0.6rem;
-    line-height: 1.3;
-  }
-
-  .lesson-desc {
-    font-size: 0.88rem;
-    color: #b0a090;
-    line-height: 1.65;
-    font-weight: 300;
-  }
-
-  .lesson-topics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-top: 1rem;
-  }
-
-  .topic-tag {
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.6rem;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.06);
-    color: var(--warm-grey);
-  }
-
-  .arrow {
-    position: absolute;
-    right: 1.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    color: rgba(255,255,255,0.2);
-    transition: all 0.3s ease;
-  }
-
-  .lesson-card:hover .arrow {
-    color: var(--yellow);
-    transform: translateY(-50%) translateX(4px);
-  }
-
-  footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    text-align: center;
-    font-size: 0.8rem;
-    color: #6a5a48;
-    line-height: 1.8;
-  }
-
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  header { animation: fadeInUp 0.6s ease forwards; }
-  .acknowledgement { animation: fadeInUp 0.6s 0.2s ease both; }
-  .warning { animation: fadeInUp 0.6s 0.35s ease both; }
-  .lessons-heading { animation: fadeInUp 0.6s 0.45s ease both; }
-  .lessons-intro { animation: fadeInUp 0.6s 0.5s ease both; }
-  .lesson-card:nth-child(1) { animation: fadeInUp 0.6s 0.55s ease both; }
-  .lesson-card:nth-child(2) { animation: fadeInUp 0.6s 0.65s ease both; }
-  .lesson-card:nth-child(3) { animation: fadeInUp 0.6s 0.75s ease both; }
-  .lesson-card:nth-child(4) { animation: fadeInUp 0.6s 0.85s ease both; }
+  :root { --black:#1a1008; --red:#c0392b; --yellow:#e8b84b; --ochre:#b5651d; --cream:#fdf6e3; --warm-grey:#e8dcc8; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--black); color:var(--cream); font-family:'Source Serif 4',Georgia,serif; min-height:100vh; }
+  .container { max-width:860px; margin:0 auto; padding:0 2rem 4rem; }
+  header { padding:3rem 0 2rem; border-bottom:3px solid var(--red); }
+  .flag-bar { display:flex; height:8px; margin-bottom:2rem; border-radius:2px; overflow:hidden; }
+  .fb-black { flex:1; background:#111; border:1px solid #444; }
+  .fb-red { flex:1; background:var(--red); }
+  .fb-yellow { flex:1; background:var(--yellow); }
+  .subtitle { font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--warm-grey); margin-bottom:0.75rem; }
+  h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,6vw,3.5rem); font-weight:900; line-height:1.1; }
+  h1 span { color:var(--yellow); display:block; }
+  .acknowledgement { background:linear-gradient(135deg,rgba(192,57,43,0.15),rgba(232,184,75,0.08)); border-left:4px solid var(--yellow); border-radius:0 8px 8px 0; padding:1.75rem 2rem; margin:2.5rem 0; }
+  .acknowledgement h2 { font-family:'Playfair Display',serif; font-size:0.9rem; color:var(--yellow); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.75rem; }
+  .acknowledgement p { font-size:0.95rem; line-height:1.8; color:var(--warm-grey); font-style:italic; font-weight:300; }
+  .warning { background:rgba(192,57,43,0.12); border:1px solid rgba(192,57,43,0.4); border-radius:8px; padding:1rem 1.5rem; margin-bottom:2rem; font-size:0.84rem; color:#e8a090; line-height:1.6; }
+  .warning strong { color:var(--red); }
+  .lessons-heading { font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--cream); margin-bottom:0.4rem; border-bottom:1px solid rgba(232,184,75,0.3); padding-bottom:0.6rem; }
+  .lessons-intro { font-size:0.88rem; color:var(--warm-grey); margin-bottom:1.75rem; font-weight:300; }
+  .lessons-grid { display:grid; grid-template-columns:1fr; gap:1rem; }
+  .lesson-card { display:block; text-decoration:none; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1.5rem 1.75rem; transition:all 0.3s ease; position:relative; overflow:hidden; }
+  .lesson-card::before { content:''; position:absolute; left:0; top:0; bottom:0; width:4px; transition:width 0.3s; }
+  .lesson-card:nth-child(1)::before { background:var(--red); }
+  .lesson-card:nth-child(2)::before { background:#8b3a3a; }
+  .lesson-card:nth-child(3)::before { background:var(--ochre); }
+  .lesson-card:nth-child(4)::before { background:#4a7a4a; }
+  .lesson-card:nth-child(5)::before { background:#6b4c8a; }
+  .lesson-card:hover { background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.16); transform:translateX(5px); }
+  .lesson-card:hover::before { width:6px; }
+  .lesson-num { font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--warm-grey); margin-bottom:0.3rem; }
+  .lesson-title { font-family:'Playfair Display',serif; font-size:1.25rem; font-weight:700; color:var(--cream); margin-bottom:0.5rem; line-height:1.3; }
+  .lesson-desc { font-size:0.86rem; color:#b0a090; line-height:1.65; font-weight:300; }
+  .arrow { position:absolute; right:1.5rem; top:50%; transform:translateY(-50%); font-size:1.4rem; color:rgba(255,255,255,0.2); transition:all 0.3s; }
+  .lesson-card:hover .arrow { color:var(--yellow); transform:translateY(-50%) translateX(4px); }
+  footer { margin-top:3rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.08); text-align:center; font-size:0.78rem; color:#6a5a48; line-height:1.8; }
 </style>
 </head>
 <body>
-<div class="bg-stripes">
-  <div class="stripe stripe-black"></div>
-  <div class="stripe stripe-red"></div>
-  <div class="stripe stripe-yellow"></div>
-</div>
-
 <div class="container">
   <header>
-    <div class="flag-bar">
-      <div class="fb-black"></div>
-      <div class="fb-red"></div>
-      <div class="fb-yellow"></div>
-    </div>
+    <div class="flag-bar"><div class="fb-black"></div><div class="fb-red"></div><div class="fb-yellow"></div></div>
     <p class="subtitle">Seaford Secondary College · HASS</p>
     <h1>Indigenous Australians <span>Civil Rights Movement</span></h1>
   </header>
@@ -293,79 +54,53 @@
   <div class="acknowledgement">
     <h2>Acknowledgement of Country</h2>
     <p>Seaford Secondary College is built on Kaurna Land. We acknowledge and respect the history and custodianship of the Kaurna people and recognise the important contributions of past and present leaders in building the community.</p>
-    <p style="margin-top:0.75rem;">We also pay our respects to all language groups throughout South Australia and their cultures, as well as to all Aboriginal Elders past and present.</p>
+    <p style="margin-top:0.75rem">We also pay our respects to all language groups throughout South Australia and their cultures, as well as to all Aboriginal Elders past and present.</p>
   </div>
 
   <div class="warning">
-    <strong>Warning:</strong> Aboriginal and Torres Strait Islander viewers are warned that the following pages contain film, voices and images of deceased persons.
-    <br><br>
-    <strong>Disclaimer:</strong> This booklet contains historically accurate language used to describe First Nations People that is now deemed inappropriate for modern use. When discussing First Nations Peoples, please use the following terms: Aboriginal · Torres Strait Islander · First Nations Peoples · Indigenous Australian.
+    <strong>Warning:</strong> These lessons contain film, voices and images of deceased persons.<br><br>
+    <strong>Disclaimer:</strong> Some lessons contain historically accurate language now deemed inappropriate. When discussing First Nations Peoples please use: Aboriginal · Torres Strait Islander · First Nations Peoples · Indigenous Australian.
   </div>
 
   <h2 class="lessons-heading">Your Lessons</h2>
-  <p class="lessons-intro">Work through each lesson in order. Read the content, watch the videos, and type your answers into the response boxes. Download your answers as a Word document at the end of each lesson to submit to your teacher.</p>
+  <p class="lessons-intro">Work through each lesson in order. Read the content, watch the videos, and type your answers. Download your answers as a Word document at the end of each lesson to submit to your teacher.</p>
 
   <div class="lessons-grid">
     <a class="lesson-card" href="lesson1.html">
       <div class="lesson-num">Lesson 1</div>
-      <div class="lesson-title">White Australia Policy &amp; The Stolen Generations</div>
-      <div class="lesson-desc">Explore the government policies designed to keep Australia racially homogeneous, the Assimilation Policy, and the devastating removal of First Nations children from their families.</div>
-      <div class="lesson-topics">
-        <span class="topic-tag">White Australia Policy</span>
-        <span class="topic-tag">Assimilation</span>
-        <span class="topic-tag">Stolen Generations</span>
-        <span class="topic-tag">Perspectives</span>
-        <span class="topic-tag">Infographic Analysis</span>
-      </div>
+      <div class="lesson-title">The White Australia Policy</div>
+      <div class="lesson-desc">Explore the government policies designed to keep Australia racially homogeneous, including the Immigration Restriction Act 1901 and how these policies were eventually dismantled.</div>
       <span class="arrow">→</span>
     </a>
-
     <a class="lesson-card" href="lesson2.html">
       <div class="lesson-num">Lesson 2</div>
-      <div class="lesson-title">The Freedom Rides &amp; Wave Hill Walk-Off</div>
-      <div class="lesson-desc">Discover how 30 university students sparked a civil rights movement across rural New South Wales, and how the Gurindji people's seven-year strike changed Australian land rights forever.</div>
-      <div class="lesson-topics">
-        <span class="topic-tag">Charles Perkins</span>
-        <span class="topic-tag">S.A.F.A</span>
-        <span class="topic-tag">Freedom Rides</span>
-        <span class="topic-tag">Wave Hill</span>
-        <span class="topic-tag">Lyric Study</span>
-      </div>
+      <div class="lesson-title">Assimilation Policy &amp; The Stolen Generations</div>
+      <div class="lesson-desc">Examine the devastating policy of assimilation and the forced removal of First Nations children from their families — one of the darkest chapters in Australian history.</div>
       <span class="arrow">→</span>
     </a>
-
     <a class="lesson-card" href="lesson3.html">
       <div class="lesson-num">Lesson 3</div>
-      <div class="lesson-title">The 1967 Referendum &amp; Land Rights</div>
-      <div class="lesson-desc">Examine the decade-long campaign for Aboriginal citizenship, the landmark 1967 vote, the Mabo decision, and the ongoing fight for recognition of traditional land ownership.</div>
-      <div class="lesson-topics">
-        <span class="topic-tag">1967 Referendum</span>
-        <span class="topic-tag">Citizenship</span>
-        <span class="topic-tag">Mabo Decision</span>
-        <span class="topic-tag">Aboriginal Embassy</span>
-        <span class="topic-tag">Persuasive Writing</span>
-      </div>
+      <div class="lesson-title">The Freedom Rides &amp; Wave Hill Walk-Off</div>
+      <div class="lesson-desc">Discover how 30 university students sparked a civil rights movement, and how the Gurindji people's seven-year strike changed Australian land rights forever.</div>
       <span class="arrow">→</span>
     </a>
-
     <a class="lesson-card" href="lesson4.html">
       <div class="lesson-num">Lesson 4</div>
+      <div class="lesson-title">The 1967 Referendum &amp; Land Rights</div>
+      <div class="lesson-desc">Examine the decade-long campaign for Aboriginal citizenship, the landmark 1967 vote, the Mabo decision, and the ongoing fight for recognition of traditional land ownership.</div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="lesson-card" href="lesson5.html">
+      <div class="lesson-num">Lesson 5</div>
       <div class="lesson-title">The Apology &amp; Contemporary Issues</div>
       <div class="lesson-desc">Analyse Prime Minister Kevin Rudd's National Apology to the Stolen Generations, explore the 2023 Voice Referendum, and examine the ongoing effort to Close the Gap.</div>
-      <div class="lesson-topics">
-        <span class="topic-tag">The Apology 2008</span>
-        <span class="topic-tag">Emotive Language</span>
-        <span class="topic-tag">2023 Referendum</span>
-        <span class="topic-tag">Closing the Gap</span>
-        <span class="topic-tag">Contemporary Issues</span>
-      </div>
       <span class="arrow">→</span>
     </a>
   </div>
 
   <footer>
     <p>Seaford Secondary College · Indigenous Australians Civil Rights Movement Unit</p>
-    <p style="margin-top:0.4rem;">Please engage with all content with care and respect for First Nations communities.</p>
+    <p style="margin-top:0.4rem">Please engage with all content with care and respect for First Nations communities.</p>
   </footer>
 </div>
 </body>
